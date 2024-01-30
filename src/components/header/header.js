@@ -7,11 +7,12 @@ function Header() {
       <nav className="flex items-center justify-between h-40 px-16 py-0">
         <Link href="/">
           <Image
-            class="logo"
             alt="Omnifood logo"
             src="/omnifood-logo.png"
-            width={50}
-            height={50}
+            // image width tio heigh is 7.5
+            // we want height 2.2rem
+            width={263}
+            height={35}
           />
         </Link>
 
