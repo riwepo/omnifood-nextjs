@@ -4,7 +4,7 @@ import Image from "next/image";
 function Header() {
   return (
     <header>
-      <nav className="flex justify-between items-center py-0 px-16 h-40">
+      <nav className="flex items-center justify-between h-40 px-16 py-0">
         <Link href="/">
           <Image
             class="logo"
