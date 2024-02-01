@@ -1,8 +1,8 @@
 function Hero() {
   return (
-    <section className="pt-12 pb-6 pl-0 pr-0 bg-off-white">
-      <div className="max-w-[80rem] mx-auto">
-        <div className="hero-text-box">
+    <section className="bg-off-white pb-6 pl-0 pr-0 pt-12">
+      <div className="mx-auto grid max-w-[80rem] grid-cols-2 items-center gap-24 px-2">
+        {/* <div className="hero-text-box">
           <h1 className="heading-primary">
             A healthy meal delivered to your door, every single day
           </h1>
@@ -43,7 +43,7 @@ function Hero() {
               />
             </picture>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

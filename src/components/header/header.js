@@ -14,7 +14,7 @@ function StyledNavLink({ children, href }) {
 function ButtonNavLink({ children, href }) {
   return (
     <Link
-      className="px-6 py-3 text-lg font-medium text-white rounded-lg hover:bg-burnt-orange-200 active:bg-burnt-orange-200 bg-burnt-orange-100"
+      className="rounded-lg bg-burnt-orange-100 px-6 py-3 text-lg font-medium text-white hover:bg-burnt-orange-200 active:bg-burnt-orange-200"
       href={href}
     >
       {children}
@@ -29,7 +29,7 @@ function ButtonNavLink({ children, href }) {
 
 function Header() {
   return (
-    <header className="flex items-center justify-between h-24 px-10 py-0 bg-off-white">
+    <header className="flex h-24 items-center justify-between bg-off-white px-10 py-0">
       <Link href="/">
         <Image
           alt="Omnifood logo"
@@ -42,7 +42,7 @@ function Header() {
       </Link>
 
       <nav>
-        <ul className="flex items-center gap-12 list-none">
+        <ul className="flex list-none items-center gap-12">
           <li>
             <StyledNavLink href="#how">How it works</StyledNavLink>
           </li>
