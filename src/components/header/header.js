@@ -4,7 +4,7 @@ import Image from "next/image";
 function StyledNavLink({ children, href }) {
   return (
     <Link
-      className="text-lg font-medium hover:text-red-700 active:text-red-700"
+      className="text-lg font-medium hover:text-burnt-orange active:text-burnt-orange"
       href={href}
     >
       {children}
