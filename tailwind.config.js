@@ -11,7 +11,7 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       white: "#ffffff",
-      "burnt-orange": "#cf711f",
+      "burnt-orange": { 100: "#e67e22", 200: "#cf711f" },
     },
     extend: {
       backgroundImage: {
