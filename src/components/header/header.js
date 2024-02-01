@@ -29,7 +29,7 @@ function ButtonNavLink({ children, href }) {
 
 function Header() {
   return (
-    <header className="flex items-center justify-between h-24 px-10 py-0">
+    <header className="flex items-center justify-between h-24 px-10 py-0 bg-off-white">
       <Link href="/">
         <Image
           alt="Omnifood logo"
