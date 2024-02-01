@@ -18,22 +18,22 @@ function Header() {
       <nav>
         <ul className="flex items-center gap-20 list-none">
           <li>
-            <Link className="text-3xl font-medium" href="/">
+            <Link className="text-lg font-medium" href="/">
               How it works
             </Link>
           </li>
           <li>
-            <Link className="text-3xl font-medium" href="/">
+            <Link className="text-lg font-medium" href="/">
               Meals
             </Link>
           </li>
           <li>
-            <Link className="text-3xl font-medium" href="/">
+            <Link className="text-lg font-medium" href="/">
               Testimonials
             </Link>
           </li>
           <li>
-            <Link className="text-3xl font-medium" href="/">
+            <Link className="text-lg font-medium" href="/">
               Try for free
             </Link>
           </li>
