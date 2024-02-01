@@ -1,12 +1,12 @@
 function Hero() {
   return (
     <section className="bg-off-white pb-6 pl-0 pr-0 pt-12">
-      <div className="mx-auto grid max-w-[80rem] grid-cols-2 items-center gap-24 px-2">
+      <div className="mx-auto mb-8 grid max-w-[80rem] grid-cols-2 items-center gap-24 px-2">
         <div className="hero-text-box">
-          <h1 className="heading-primary text-off-black text-5xl font-bold tracking-[-0.5px]">
+          <h1 className="heading-primary text-off-black mb-8 text-5xl font-bold tracking-[-0.5px]">
             A healthy meal delivered to your door, every single day
           </h1>
-          <p className="hero-description">
+          <p className="hero-description mb-12 text-xl">
             The smart 365-days-per-year food subscription that will make you eat
             healthy again. Tailored to your personal tastes and nutritional
             needs.
@@ -51,30 +51,10 @@ function Hero() {
 
 export default Hero;
 
-// .hero {
-//   max-width: 130rem;
-//   margin: 0 auto;
-//   padding: 0 3.2rem;
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   gap: 9.6rem;
-//   align-items: center;
-// }
-
-// .heading-primary,
-// .heading-secondary,
-// .heading-tertiary {
-//   font-weight: 700;
-//   color: #333;
-//   /* color: #45260a; */
-//   /* color: #343a40; */
-//   letter-spacing: -0.5px;
-// }
-
-// .heading-primary {
-//   font-size: 5.2rem;
-//   line-height: 1.05;
-//   margin-bottom: 3.2rem;
+// .hero-description {
+//   font-size: 2rem;
+//   line-height: 1.6;
+//   margin-bottom: 4.8rem;
 // }
 
 // @media (max-width: 59em) {
