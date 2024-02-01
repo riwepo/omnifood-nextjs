@@ -29,16 +29,16 @@ function Header() {
       <nav>
         <ul className="flex items-center gap-12 list-none">
           <li>
-            <StyledNavLink href="/">How it works</StyledNavLink>
+            <StyledNavLink href="#how">How it works</StyledNavLink>
           </li>
           <li>
-            <StyledNavLink href="/">Meals</StyledNavLink>
+            <StyledNavLink href="#meals">Meals</StyledNavLink>
           </li>
           <li>
-            <StyledNavLink href="/">Testimonials</StyledNavLink>
+            <StyledNavLink href="#testimonials">Testimonials</StyledNavLink>
           </li>
           <li>
-            <StyledNavLink href="/">Try it for free</StyledNavLink>
+            <StyledNavLink href="#pricing">Try it for free</StyledNavLink>
           </li>
         </ul>
       </nav>
