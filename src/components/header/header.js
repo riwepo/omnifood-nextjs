@@ -8,10 +8,10 @@ function Header() {
         <Image
           alt="Omnifood logo"
           src="/omnifood-logo.png"
-          // image width tio heigh is 7.5
+          // image width to heigh is 7.5
           // we want height 2.2rem
-          width={263}
-          height={35}
+          width={165}
+          height={22}
         />
       </Link>
 
