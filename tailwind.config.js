@@ -12,6 +12,7 @@ module.exports = {
       current: "currentColor",
       white: "#ffffff",
       "burnt-orange": { 100: "#e67e22", 200: "#cf711f" },
+      "off-white": "#fdf2e9",
     },
     extend: {
       backgroundImage: {
