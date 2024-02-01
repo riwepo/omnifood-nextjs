@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section>
+    <section className="pt-12 pb-6 pl-0 pr-0 bg-off-white">
       <div className="hero">
         <div className="hero-text-box">
           <h1 className="heading-primary">
@@ -26,19 +26,19 @@ function Hero() {
               <img src="img/customers/customer-5.jpg" alt="Customer photo" />
               <img src="img/customers/customer-6.jpg" alt="Customer photo" />
             </div>
-            <p class="delivered-text">
+            <p className="delivered-text">
               <span>250,000+</span> meals delivered last year!
             </p>
           </div>
 
-          <div class="hero-img-box">
+          <div className="hero-img-box">
             <picture>
               <source srcset="img/hero.webp" type="image/webp" />
               <source srcset="img/hero-min.png" type="image/png" />
 
               <img
                 src="img/hero-min.png"
-                class="hero-img"
+                className="hero-img"
                 alt="Woman enjoying food, meals in storage container, and food bowls on a table"
               />
             </picture>
@@ -48,6 +48,11 @@ function Hero() {
     </section>
   );
 }
+
+// .section-hero {
+//   background-color: #fdf2e9;
+//   padding: 4.8rem 0 9.6rem 0;
+// }
 
 export default Hero;
 
