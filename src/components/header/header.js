@@ -1,6 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
 
+function StyledNavLink({ children, href }) {
+  return (
+    <Link
+      className="text-lg font-medium hover:text-red-700 active:text-red-700"
+      href={href}
+    >
+      {children}
+    </Link>
+  );
+}
+
 function Header() {
   return (
     <header className="flex items-center justify-between h-24 px-10 py-0">
@@ -18,24 +29,16 @@ function Header() {
       <nav>
         <ul className="flex items-center gap-12 list-none">
           <li>
-            <Link className="text-lg font-medium" href="/">
-              How it works
-            </Link>
+            <StyledNavLink href="/">How it works</StyledNavLink>
           </li>
           <li>
-            <Link className="text-lg font-medium" href="/">
-              Meals
-            </Link>
+            <StyledNavLink href="/">Meals</StyledNavLink>
           </li>
           <li>
-            <Link className="text-lg font-medium" href="/">
-              Testimonials
-            </Link>
+            <StyledNavLink href="/">Testimonials</StyledNavLink>
           </li>
           <li>
-            <Link className="text-lg font-medium" href="/">
-              Try for free
-            </Link>
+            <StyledNavLink href="/">Try it for free</StyledNavLink>
           </li>
         </ul>
       </nav>
