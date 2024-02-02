@@ -1,30 +1,33 @@
+import Button from "../ui/button";
+
 function Hero() {
   return (
     <section className="bg-off-white pb-6 pl-0 pr-0 pt-12">
       <div className="mx-auto mb-8 grid max-w-[80rem] grid-cols-2 items-center gap-24 px-2">
         <div className="hero-text-box">
-          <h1 className="heading-primary text-off-black mb-8 text-5xl font-bold tracking-[-0.5px]">
+          <h1 className="heading-primary text-greys-100 mb-8 text-5xl font-bold tracking-[-0.5px]">
             A healthy meal delivered to your door, every single day
           </h1>
-          <p className="hero-description mb-12 text-xl">
+          <p className="mb-12 text-xl">
             The smart 365-days-per-year food subscription that will make you eat
             healthy again. Tailored to your personal tastes and nutritional
             needs.
           </p>
-          <a href="#cta" className="btn btn--full margin-right-sm">
+          <Button href="#cta" full={true} extraClasses="mr-4">
             Start eating well
-          </a>
-          <a href="#how" className="btn btn--outline">
+          </Button>
+          <Button href="#how" full={false}>
             Learn more &darr;
-          </a>
-          <div class="delivered-meals">
-            <div class="delivered-imgs">
-              <img src="img/customers/customer-1.jpg" alt="Customer photo" />
+          </Button>
+
+          <div className="delivered-meals">
+            <div className="delivered-imgs">
+              {/* <img src="img/customers/customer-1.jpg" alt="Customer photo" />
               <img src="img/customers/customer-2.jpg" alt="Customer photo" />
               <img src="img/customers/customer-3.jpg" alt="Customer photo" />
               <img src="img/customers/customer-4.jpg" alt="Customer photo" />
               <img src="img/customers/customer-5.jpg" alt="Customer photo" />
-              <img src="img/customers/customer-6.jpg" alt="Customer photo" />
+              <img src="img/customers/customer-6.jpg" alt="Customer photo" /> */}
             </div>
             <p className="delivered-text">
               <span>250,000+</span> meals delivered last year!
