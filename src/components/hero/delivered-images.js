@@ -1,6 +1,6 @@
 import DeliveredImage from "./delivered-image";
 
-function DeliveredImages({ src, alt }) {
+function DeliveredImages() {
   return (
     <div className="flex">
       <DeliveredImage src="/img/customers/customer-1.jpg" alt="customer" />
@@ -11,7 +11,6 @@ function DeliveredImages({ src, alt }) {
       <DeliveredImage src="/img/customers/customer-6.jpg" alt="customer" />
     </div>
   );
-  s;
-}
+ }
 
 export default DeliveredImages;
