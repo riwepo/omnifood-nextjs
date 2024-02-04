@@ -5,6 +5,9 @@ function Featured() {
   return (
     <section className="bg-transparent pb-2 pl-0 pr-0 pt-3">
       <div className="mx-auto my-0 max-w-[75rem] px-8 py-0">
+        <h2 className="text-greys-300 mb-6 text-center text-sm font-medium uppercase tracking-widest">
+          As featured in
+        </h2>
         <div className="hero-text-box col-auto">
           <h1 className="heading-primary mb-8 text-5xl font-bold tracking-[-0.5px] text-greys-100">
             A healthy meal delivered to your door, every single day
@@ -49,9 +52,12 @@ function Featured() {
 
 export default Featured;
 
-// .container {
-//   /* 1140px */
-//   max-width: 120rem;
-//   padding: 0 3.2rem;
-//   margin: 0 auto;
+// .heading-featured-in {
+//   font-size: 1.4rem;
+//   text-transform: uppercase;
+//   letter-spacing: 0.75px;
+//   font-weight: 500;
+//   text-align: center;
+//   margin-bottom: 2.4rem;
+//   color: #888;
 // }
