@@ -4,7 +4,7 @@ import DeliveredImages from "./delivered-images";
 function Featured() {
   return (
     <section className="bg-transparent pb-2 pl-0 pr-0 pt-3">
-      <div className="mx-auto mb-8 grid max-w-[80rem] grid-cols-2 items-center gap-24 px-2">
+      <div className="mx-auto my-0 max-w-[75rem] px-8 py-0">
         <div className="hero-text-box col-auto">
           <h1 className="heading-primary mb-8 text-5xl font-bold tracking-[-0.5px] text-greys-100">
             A healthy meal delivered to your door, every single day
@@ -49,6 +49,9 @@ function Featured() {
 
 export default Featured;
 
-// .section-featured {
-//   padding: 4.8rem 0 3.2rem 0;
+// .container {
+//   /* 1140px */
+//   max-width: 120rem;
+//   padding: 0 3.2rem;
+//   margin: 0 auto;
 // }
