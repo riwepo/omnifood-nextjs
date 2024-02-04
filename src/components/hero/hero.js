@@ -1,4 +1,5 @@
 import Button from "../ui/button";
+import DeliveredImages from "./delivered-images";
 
 function Hero() {
   return (
@@ -20,15 +21,16 @@ function Hero() {
             Learn more &darr;
           </Button>
 
-          <div className="delivered-meals">
-            <div className="delivered-imgs">
+          <div className="mt-20 flex items-center gap-4">
+            {/* <div className="flex">
               {/* <img src="img/customers/customer-1.jpg" alt="Customer photo" />
               <img src="img/customers/customer-2.jpg" alt="Customer photo" />
               <img src="img/customers/customer-3.jpg" alt="Customer photo" />
               <img src="img/customers/customer-4.jpg" alt="Customer photo" />
               <img src="img/customers/customer-5.jpg" alt="Customer photo" />
-              <img src="img/customers/customer-6.jpg" alt="Customer photo" /> */}
-            </div>
+              <img src="img/customers/customer-6.jpg" alt="Customer photo" /> 
+            </div> */}
+            <DeliveredImages />
             <p className="delivered-text">
               <span>250,000+</span> meals delivered last year!
             </p>
@@ -54,25 +56,35 @@ function Hero() {
 
 export default Hero;
 
-// .hero-description {
-//   font-size: 2rem;
-//   line-height: 1.6;
-//   margin-bottom: 4.8rem;
+// .delivered-meals {
+//   display: flex;
+//   align-items: center;
+//   gap: 1.6rem;
+//   margin-top: 8rem;
 // }
 
-// @media (max-width: 59em) {
-//   html {
-//     /* 8px / 16px = 0.5 = 50% */
-//     font-size: 50%;
-//   }
+// .delivered-imgs {
+//   display: flex;
+// }
 
-//   .hero {
-//     grid-template-columns: 1fr;
-//     padding: 0 8rem;
-//     gap: 6.4rem;
-//   }
+// .delivered-imgs img {
+//   height: 4.8rem;
+//   width: 4.8rem;
+//   border-radius: 50%;
+//   margin-right: -1.6rem;
+//   border: 3px solid #fdf2e9;
+// }
 
-//   .hero-text-box,
-//   .hero-img-box {
-//     text-align: center;
-//   }
+// .delivered-imgs img:last-child {
+//   margin: 0;
+// }
+
+// .delivered-text {
+//   font-size: 1.8rem;
+//   font-weight: 600;
+// }
+
+// .delivered-text span {
+//   color: #cf711f;
+//   font-weight: 700;
+// }
