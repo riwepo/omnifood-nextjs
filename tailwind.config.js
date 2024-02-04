@@ -13,7 +13,7 @@ module.exports = {
       white: "#ffffff",
       "burnt-orange": { 100: "#e67e22", 200: "#cf711f" },
       "off-white": "#fdf2e9",
-      greys: { 100: "#333", 200: "#555", 300: "888" },
+      greys: { 100: "#333", 200: "#555", 300: "#888" },
     },
     extend: {
       backgroundImage: {
