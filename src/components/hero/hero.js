@@ -6,7 +6,7 @@ function Hero() {
     <section className="bg-off-white pb-6 pl-0 pr-0 pt-12">
       <div className="mx-auto mb-8 grid max-w-[80rem] grid-cols-2 items-center gap-24 px-2">
         <div className="hero-text-box">
-          <h1 className="heading-primary text-greys-100 mb-8 text-5xl font-bold tracking-[-0.5px]">
+          <h1 className="heading-primary mb-8 text-5xl font-bold tracking-[-0.5px] text-greys-100">
             A healthy meal delivered to your door, every single day
           </h1>
           <p className="mb-12 text-xl">
@@ -22,17 +22,10 @@ function Hero() {
           </Button>
 
           <div className="mt-20 flex items-center gap-4">
-            {/* <div className="flex">
-              {/* <img src="img/customers/customer-1.jpg" alt="Customer photo" />
-              <img src="img/customers/customer-2.jpg" alt="Customer photo" />
-              <img src="img/customers/customer-3.jpg" alt="Customer photo" />
-              <img src="img/customers/customer-4.jpg" alt="Customer photo" />
-              <img src="img/customers/customer-5.jpg" alt="Customer photo" />
-              <img src="img/customers/customer-6.jpg" alt="Customer photo" /> 
-            </div> */}
             <DeliveredImages />
-            <p className="delivered-text">
-              <span>250,000+</span> meals delivered last year!
+            <p className="text-lg font-semibold">
+              <span className="font-bold text-burnt-orange-200">250,000+</span>{" "}
+              meals delivered last year!
             </p>
           </div>
 
