@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section className="bg-off-white pb-6 pl-0 pr-0 pt-12">
       <div className="mx-auto mb-8 grid max-w-[80rem] grid-cols-2 items-center gap-24 px-2">
-        <div className="hero-text-box">
+        <div className="hero-text-box col-auto">
           <h1 className="heading-primary mb-8 text-5xl font-bold tracking-[-0.5px] text-greys-100">
             A healthy meal delivered to your door, every single day
           </h1>
@@ -28,19 +28,19 @@ function Hero() {
               meals delivered last year!
             </p>
           </div>
+        </div>
 
-          <div className="hero-img-box">
-            <picture>
-              <source srcset="img/hero.webp" type="image/webp" />
-              <source srcset="img/hero-min.png" type="image/png" />
+        <div className="col-auto text-center">
+          <picture>
+            <source srcSet="img/hero.webp" type="image/webp" />
+            <source srcSet="img/hero-min.png" type="image/png" />
 
-              <img
-                src="img/hero-min.png"
-                className="hero-img"
-                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-              />
-            </picture>
-          </div>
+            <img
+              src="img/hero-min.png"
+              className="hero-img"
+              alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+            />
+          </picture>
         </div>
       </div>
     </section>
