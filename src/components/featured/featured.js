@@ -6,7 +6,7 @@ function Featured() {
   return (
     <section className="bg-transparent pb-2 pl-0 pr-0 pt-3">
       <div className="mx-auto my-0 max-w-[75rem] px-8 py-0">
-        <h2 className="text-greys-300 mb-6 text-center text-sm font-medium uppercase tracking-widest">
+        <h2 className="mb-6 text-center text-sm font-medium uppercase tracking-widest text-greys-300">
           As featured in
         </h2>
         <FeaturedLogos />
@@ -16,13 +16,3 @@ function Featured() {
 }
 
 export default Featured;
-
-// .heading-featured-in {
-//   font-size: 1.4rem;
-//   text-transform: uppercase;
-//   letter-spacing: 0.75px;
-//   font-weight: 500;
-//   text-align: center;
-//   margin-bottom: 2.4rem;
-//   color: #888;
-// }
