@@ -18,7 +18,25 @@ function Step() {
         </p>
       </div>
 
-      <div className="before:bg-whites-100 relative flex items-center justify-center before:absolute before:left-1/2 before:top-1/2 before:-z-20 before:block before:w-[60%] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:pb-[60%]">
+      <div
+        className={`
+        before:bg-whites-100
+         relative
+         flex
+         items-center
+         justify-center
+         before:absolute
+         before:left-1/2
+         before:top-1/2
+         before:-z-20
+         before:block
+         before:w-[60%]
+         before:-translate-x-1/2
+         before:-translate-y-1/2
+         before:rounded-full
+         before:pb-[60%]         
+        `}
+      >
         <Image
           src="/img/step/app-screen-1.png"
           width={imgWidth}
