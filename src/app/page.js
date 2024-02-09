@@ -1,6 +1,7 @@
 import Header from "../components/header";
 import Hero from "../components/hero";
 import Featured from "../components/featured";
+import HowItWorks from "@/components/how-it-works";
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <Header />
       <Hero />
       <Featured />
+      <HowItWorks />
     </>
   );
 }
