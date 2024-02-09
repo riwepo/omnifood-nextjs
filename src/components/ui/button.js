@@ -12,7 +12,7 @@ function Button({ href, full, children, extraClasses }) {
   } else {
     classes = cn(
       extraClasses,
-      "inline-block rounded-lg bg-white px-8 py-4 text-xl font-semibold text-greys-200 transition-all duration-300 hover:bg-off-white active:bg-off-white hover:shadow-inner active:shadow-inner",
+      "inline-block rounded-lg bg-white px-8 py-4 text-xl font-semibold text-greys-200 transition-all duration-300 hover:bg-whites-100 active:bg-whites-100 hover:shadow-inner active:shadow-inner",
     );
   }
   return (
