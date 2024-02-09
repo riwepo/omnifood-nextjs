@@ -1,6 +1,4 @@
-import Button from "../ui/button";
 import FeaturedLogos from "./featured-logos";
-import DeliveredImages from "./featured-logos";
 
 function Featured() {
   return (
