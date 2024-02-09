@@ -3,7 +3,7 @@ import DeliveredImages from "./delivered-images";
 
 function Hero() {
   return (
-    <section className="bg-off-white pb-6 pl-0 pr-0 pt-12">
+    <section className="bg-whites-100 pb-6 pl-0 pr-0 pt-12">
       <div className="mx-auto mb-8 grid max-w-[80rem] grid-cols-2 items-center gap-24 px-2">
         <div className="hero-text-box col-auto">
           <h1 className="heading-primary mb-8 text-5xl font-bold tracking-[-0.5px] text-greys-100">
@@ -48,4 +48,3 @@ function Hero() {
 }
 
 export default Hero;
-
