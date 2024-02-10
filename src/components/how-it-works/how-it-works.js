@@ -33,7 +33,7 @@ const step3 = {
 
 function HowItWorks() {
   return (
-    <section id="how" className="px-0 py-24">
+    <section id="how" className="bg-white px-0 py-24">
       <div className="m-auto max-w-[75rem] px-8 py-0">
         <span className="mb-4 block text-base font-medium uppercase tracking-[0.75px] text-burnt-orange-200">
           How it works
