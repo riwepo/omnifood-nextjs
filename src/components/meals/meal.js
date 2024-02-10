@@ -30,20 +30,20 @@ function Meal({ mealData }) {
         <p className="meal-title mb-8 text-2xl font-semibold text-greys-100">
           {mealData.heading}
         </p>
-        <ul class="meal-attributes">
-          <li class="meal-attribute">
+        <ul className="meal-attributes flex list-none flex-col gap-5">
+          <li className="meal-attribute flex items-center gap-4 text-lg">
             <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
             <span>
               <strong>{mealData.calories}</strong> calories
             </span>
           </li>
-          <li class="meal-attribute">
+          <li className="meal-attribute flex items-center gap-4 text-lg">
             <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
             <span>
               NutriScore &reg; <strong>{mealData.nutriScore}</strong>
             </span>
           </li>
-          <li class="meal-attribute">
+          <li className="meal-attribute flex items-center gap-4 text-lg">
             <ion-icon class="meal-icon" name="star-outline"></ion-icon>
             <span>
               <strong>{mealData.rating}</strong> rating ({mealData.reviews})
@@ -83,6 +83,20 @@ function Meal({ mealData }) {
 //   color: #333;
 //   font-weight: 600;
 //   margin-bottom: 3.2rem;
+// }
+
+// .meal-attributes {
+//   list-style: none;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 2rem;
+// }
+
+// .meal-attribute {
+//   font-size: 1.8rem;
+//   display: flex;
+//   align-items: center;
+//   gap: 1.6rem;
 // }
 
 export default Meal;
