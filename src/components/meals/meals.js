@@ -1,24 +1,31 @@
 import Meal from "../meals/meal";
 
 const meal1 = {
-  number: "01",
   index: 0,
   imgSrc: "/img/meals/meal-1.jpg",
   imgAlt: "Japanese Gyozas",
-  summary: "Tell us what you like (and what not)",
-  description: `Never again waste time thinking about what to eat!
-     Omnifood AI will create a 100% personalized weekly meal plan just for you.
-     It makes  sure you get all the nutrients and vitamins you need, no matter what diet you follow!`,
+  tags: [
+    { id: "vegetarian", heading: "Vegetarian", colour: "bg-tags-vegetarian" },
+  ],
+  heading: "Japanese Gyozas",
+  calories: 650,
+  nutriScore: 74,
+  rating: 4.9,
+  reviews: 537,
 };
 const meal2 = {
-  number: "02",
   index: 1,
   imgSrc: "/img/meals/meal-2.jpg",
   imgAlt: "Avocado Salad",
-  summary: "Approve your weekly meal plan",
-  description: `Once per week, approve the meal plan generated for you by Omnifood
-  AI. You can change ingredients, swap entire meals, or even add
-  your own recipes.`,
+  tags: [
+    { id: "vegan", heading: "Vegan", colour: "bg-tags-vegan" },
+    { id: "paleo", heading: "Paleo", colour: "bg-tags-paleo" },
+  ],
+  heading: "Avocado Salad",
+  calories: 400,
+  nutriScore: 92,
+  rating: 4.8,
+  reviews: 441,
 };
 
 function Meals() {
@@ -33,7 +40,7 @@ function Meals() {
         </h2>
       </div>
 
-      <div className="m-auto grid max-w-[75rem] grid-cols-3 items-center gap-y-[6rem] px-8 py-0">
+      <div className="m-auto mb-12 grid max-w-[75rem] grid-cols-3 items-center gap-y-[6rem] px-8 py-0">
         <Meal mealData={meal1} />
         <Meal mealData={meal2} />
         {/* <Step stepData={step3} /> */}
