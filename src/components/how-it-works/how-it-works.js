@@ -2,6 +2,7 @@ import Step from "../how-it-works/step";
 
 const step1 = {
   number: "01",
+  index: 0,
   imgSrc: "/img/step/app-screen-1.png",
   imgAlt: "iPhone app preferences selection screen",
   summary: "Tell us what you like (and what not)",
@@ -11,6 +12,7 @@ const step1 = {
 };
 const step2 = {
   number: "02",
+  index: 1,
   imgSrc: "/img/step/app-screen-2.png",
   imgAlt: "iPhone app meal approving plan screen",
   summary: "Approve your weekly meal plan",
@@ -20,6 +22,7 @@ const step2 = {
 };
 const step3 = {
   number: "03",
+  index: 2,
   imgSrc: "/img/step/app-screen-3.png",
   imgAlt: "iPhone app delivery screen",
   summary: "Receive meals at convenient time",
@@ -50,30 +53,3 @@ function HowItWorks() {
 }
 
 export default HowItWorks;
-
-// .section-how {
-//   padding: 9.6rem 0;
-// }
-
-// .container {
-//   /* 1140px */
-//   max-width: 120rem;
-//   padding: 0 3.2rem;
-//   margin: 0 auto;
-// }
-
-// .subheading {
-//   display: block;
-//   font-size: 1.6rem;
-//   font-weight: 500;
-//   color: #cf711f;
-//   text-transform: uppercase;
-//   margin-bottom: 1.6rem;
-//   letter-spacing: 0.75px;
-// }
-
-// .heading-secondary {
-//   font-size: 4.4rem;
-//   line-height: 1.2;
-//   margin-bottom: 9.6rem;
-// }

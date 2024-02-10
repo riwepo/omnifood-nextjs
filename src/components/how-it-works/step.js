@@ -3,9 +3,31 @@ import Image from "next/image";
 function Step({ stepData }) {
   const imgWidth = 400 * 0.35;
   const imgHeight = 809 * 0.35;
+  let textOrder, picOrder;
+  if (stepData.index % 2 === 0) {
+    textOrder = stepData.index * 2;
+    picOrder = textOrder + 1;
+  } else {
+    picOrder = stepData.index * 2;
+    textOrder = picOrder + 1;
+  }
+  // note tailwind needs complete unbroken class names in the source file
+  const orders = [
+    "order-1",
+    "order-2",
+    "order-3",
+    "order-4",
+    "order-5",
+    "order-6",
+  ];
+  const textOrderStr = orders[textOrder];
+  const picOrderStr = orders[picOrder];
+
+  console.log(textOrderStr, picOrderStr);
+
   return (
     <>
-      <div>
+      <div className={textOrderStr}>
         <p className="text-greys-400 mb-4 text-[5.4rem] font-semibold">
           {stepData.number}
         </p>
@@ -20,6 +42,7 @@ function Step({ stepData }) {
         before:bg-whites-100
         after:bg-whites-200
         relative
+        ${picOrderStr}
         flex
         items-center
         justify-center
@@ -57,80 +80,3 @@ function Step({ stepData }) {
 }
 
 export default Step;
-
-// .step-img-box {
-//     position: relative;
-
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//   }
-
-//   .step-img-box::before,
-//   .step-img-box::after {
-//     content: "";
-//     display: block;
-//     border-radius: 50%;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//   }
-
-//   .step-img-box::before {
-//     width: 60%;
-//     /* height: 60%; */
-
-//     /* 60% of parent's width */
-//     padding-bottom: 60%;
-
-//     background-color: #fdf2e9;
-//     z-index: -2;
-//   }
-
-//   .step-img-box::after {
-//     width: 45%;
-//     padding-bottom: 45%;
-//     background-color: #fae5d3;
-//     z-index: -1;
-//   }
-
-// .step-number {
-//     font-size: 8.6rem;
-//     font-weight: 600;
-//     color: #ddd;
-//     margin-bottom: 1.2rem;
-//   }
-
-// .heading-primary,
-// .heading-secondary,
-// .heading-tertiary {
-//   font-weight: 700;
-//   color: #333;
-//   /* color: #45260a; */
-//   /* color: #343a40; */
-//   letter-spacing: -0.5px;
-// }
-
-// .heading-primary {
-//   font-size: 5.2rem;
-//   line-height: 1.05;
-//   margin-bottom: 3.2rem;
-// }
-
-// .heading-secondary {
-//   font-size: 4.4rem;
-//   line-height: 1.2;
-//   margin-bottom: 9.6rem;
-// }
-
-// .heading-tertiary {
-//   font-size: 3rem;
-//   line-height: 1.2;
-//   margin-bottom: 3.2rem;
-// }
-
-// .step-description {
-//     font-size: 1.8rem;
-//     line-height: 1.8;
-//   }
