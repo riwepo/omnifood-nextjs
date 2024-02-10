@@ -1,5 +1,14 @@
 import Step from "../how-it-works/step";
 
+const step1 = {
+  imgSrc: "/img/step/app-screen-1.png",
+  imgAlt: "iPhone app preferences selection screen",
+  summary: "Tell us what you like (and what not)",
+  description: `Never again waste time thinking about what to eat! 
+     Omnifood AI will create a 100% personalized weekly meal plan just for you.
+     It makes  sure you get all the nutrients and vitamins you need, no matter what diet you follow!`,
+};
+
 function HowItWorks() {
   return (
     <section id="how" className="px-0 py-24">
@@ -12,7 +21,7 @@ function HowItWorks() {
         </h2>
       </div>
 
-      <Step />
+      <Step stepData={step1} />
     </section>
   );
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function Step() {
+function Step({ stepData }) {
   const imgWidth = 400 * 0.35;
   const imgHeight = 809 * 0.35;
   return (
@@ -8,14 +8,9 @@ function Step() {
       <div>
         <p className="text-greys-400 mb-4 text-[5.4rem] font-semibold">01</p>
         <h3 className="mb-8 text-3xl font-bold leading-tight tracking-[0.5px] text-greys-100">
-          Tell us what you like (and what not)
+          {stepData.summary}
         </h3>
-        <p className="text-lg leading-7">
-          Never again waste time thinking about what to eat! Omnifood AI will
-          create a 100% personalized weekly meal plan just for you. It makes
-          sure you get all the nutrients and vitamins you need, no matter what
-          diet you follow!
-        </p>
+        <p className="text-lg leading-7">{stepData.description}</p>
       </div>
 
       <div
@@ -49,10 +44,10 @@ function Step() {
         `}
       >
         <Image
-          src="/img/step/app-screen-1.png"
+          src={stepData.imgSrc}
           width={imgWidth}
           height={imgHeight}
-          alt="iPhone app preferences selection screen"
+          alt={stepData.imgAlt}
         />
       </div>
     </div>
