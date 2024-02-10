@@ -6,7 +6,9 @@ function Step({ stepData }) {
   return (
     <div className="m-auto grid max-w-[75rem] grid-cols-2 items-center px-8 py-0">
       <div>
-        <p className="text-greys-400 mb-4 text-[5.4rem] font-semibold">01</p>
+        <p className="text-greys-400 mb-4 text-[5.4rem] font-semibold">
+          {stepData.number}
+        </p>
         <h3 className="mb-8 text-3xl font-bold leading-tight tracking-[0.5px] text-greys-100">
           {stepData.summary}
         </h3>
