@@ -3,8 +3,8 @@ import Meal from "../meals/meal";
 const meal1 = {
   number: "01",
   index: 0,
-  imgSrc: "/img/step/app-screen-1.png",
-  imgAlt: "iPhone app preferences selection screen",
+  imgSrc: "/img/meals/meal-1.jpg",
+  imgAlt: "Japanese Gyozas",
   summary: "Tell us what you like (and what not)",
   description: `Never again waste time thinking about what to eat!
      Omnifood AI will create a 100% personalized weekly meal plan just for you.
@@ -13,8 +13,8 @@ const meal1 = {
 const meal2 = {
   number: "02",
   index: 1,
-  imgSrc: "/img/step/app-screen-2.png",
-  imgAlt: "iPhone app meal approving plan screen",
+  imgSrc: "/img/meals/meal-2.jpg",
+  imgAlt: "Avocado Salad",
   summary: "Approve your weekly meal plan",
   description: `Once per week, approve the meal plan generated for you by Omnifood
   AI. You can change ingredients, swap entire meals, or even add
