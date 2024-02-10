@@ -4,7 +4,7 @@ function Step({ stepData }) {
   const imgWidth = 400 * 0.35;
   const imgHeight = 809 * 0.35;
   return (
-    <div className="m-auto grid max-w-[75rem] grid-cols-2 items-center px-8 py-0">
+    <>
       <div>
         <p className="text-greys-400 mb-4 text-[5.4rem] font-semibold">
           {stepData.number}
@@ -52,7 +52,7 @@ function Step({ stepData }) {
           alt={stepData.imgAlt}
         />
       </div>
-    </div>
+    </>
   );
 }
 

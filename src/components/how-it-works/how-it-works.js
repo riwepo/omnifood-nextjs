@@ -40,9 +40,11 @@ function HowItWorks() {
         </h2>
       </div>
 
-      <Step stepData={step1} />
-      <Step stepData={step2} />
-      <Step stepData={step3} />
+      <div className="m-auto grid max-w-[75rem] grid-cols-2 items-center gap-y-[6rem] px-8 py-0">
+        <Step stepData={step1} />
+        <Step stepData={step2} />
+        <Step stepData={step3} />
+      </div>
     </section>
   );
 }
