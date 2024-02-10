@@ -1,12 +1,31 @@
 import Step from "../how-it-works/step";
 
 const step1 = {
+  number: "01",
   imgSrc: "/img/step/app-screen-1.png",
   imgAlt: "iPhone app preferences selection screen",
   summary: "Tell us what you like (and what not)",
   description: `Never again waste time thinking about what to eat! 
      Omnifood AI will create a 100% personalized weekly meal plan just for you.
      It makes  sure you get all the nutrients and vitamins you need, no matter what diet you follow!`,
+};
+const step2 = {
+  number: "02",
+  imgSrc: "/img/step/app-screen-2.png",
+  imgAlt: "iPhone app meal approving plan screen",
+  summary: "Approve your weekly meal plan",
+  description: `Once per week, approve the meal plan generated for you by Omnifood
+  AI. You can change ingredients, swap entire meals, or even add
+  your own recipes.`,
+};
+const step3 = {
+  number: "03",
+  imgSrc: "/img/step/app-screen-3.png",
+  imgAlt: "iPhone app delivery screen",
+  summary: "Receive meals at convenient time",
+  description: `Best chefs in town will cook your selected meal every day, and we
+  will deliver it to your door whenever works best for you. You can
+  change delivery schedule and address daily!`,
 };
 
 function HowItWorks() {
@@ -22,6 +41,8 @@ function HowItWorks() {
       </div>
 
       <Step stepData={step1} />
+      <Step stepData={step2} />
+      <Step stepData={step3} />
     </section>
   );
 }
