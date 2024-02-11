@@ -1,4 +1,7 @@
 import Image from "next/image";
+import FlameIcon from "../../../public/icons/meals/flame-outline.svg";
+import StarIcon from "../../../public/icons/meals/star-outline.svg";
+import RestaurantIcon from "../../../public/icons/meals/restaurant-outline.svg";
 
 function Meal({ mealData }) {
   const imgWidth = 700 * 0.35;
@@ -32,19 +35,28 @@ function Meal({ mealData }) {
         </p>
         <ul className="meal-attributes flex list-none flex-col gap-5">
           <li className="meal-attribute flex items-center gap-4 text-lg">
-            <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+            <FlameIcon
+              className="meal-icon h-8 w-8 text-burnt-orange-100"
+              name="flame-outline"
+            />
             <span>
               <strong>{mealData.calories}</strong> calories
             </span>
           </li>
           <li className="meal-attribute flex items-center gap-4 text-lg">
-            <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+            <RestaurantIcon
+              className="restaurant-icon h-8 w-8 text-burnt-orange-100"
+              name="restaurant-outline"
+            />
             <span>
               NutriScore &reg; <strong>{mealData.nutriScore}</strong>
             </span>
           </li>
           <li className="meal-attribute flex items-center gap-4 text-lg">
-            <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+            <StarIcon
+              className="star-icon h-8 w-8 text-burnt-orange-100"
+              name="star-outline"
+            ></StarIcon>
             <span>
               <strong>{mealData.rating}</strong> rating ({mealData.reviews})
             </span>
