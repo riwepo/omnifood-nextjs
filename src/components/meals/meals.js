@@ -46,6 +46,15 @@ function Meals() {
         <Meal mealData={meal2} />
         <Diets />
       </div>
+
+      <div class="all-recipes container m-auto max-w-[75rem] px-8 py-0 text-center text-lg ">
+        <a
+          href="#"
+          className="link inline-block border-b-[1px] border-current pb-[2px] text-burnt-orange-100 transition-all duration-300 hover:border-none hover:text-burnt-orange-200"
+        >
+          See all recipes &rarr;
+        </a>
+      </div>
     </section>
   );
 }
@@ -55,6 +64,27 @@ function Meals() {
 //   max-width: 120rem;
 //   padding: 0 3.2rem;
 //   margin: 0 auto;
+// }
+
+// .all-recipes {
+//   text-align: center;
+//   font-size: 1.8rem;
+// }
+
+// .link:link,
+// .link:visited {
+//   display: inline-block;
+//   color: #e67e22;
+//   text-decoration: none;
+//   border-bottom: 1px solid currentColor;
+//   padding-bottom: 2px;
+//   transition: all 0.3s;
+// }
+
+// .link:hover,
+// .link:active {
+//   color: #cf711f;
+//   border-bottom: 1px solid transparent;
 // }
 
 export default Meals;
