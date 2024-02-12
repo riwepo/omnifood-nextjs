@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import HeadingTertiary from "../ui/heading-tertiary";
+
 function Step({ stepData }) {
   const imgWidth = 400 * 0.35;
   const imgHeight = 809 * 0.35;
@@ -31,9 +33,7 @@ function Step({ stepData }) {
         <p className="mb-4 text-[5.4rem] font-semibold text-greys-400">
           {stepData.number}
         </p>
-        <h3 className="mb-8 text-3xl font-bold leading-tight tracking-[0.5px] text-greys-100">
-          {stepData.summary}
-        </h3>
+        <HeadingTertiary>{stepData.summary}</HeadingTertiary>
         <p className="text-lg leading-7">{stepData.description}</p>
       </div>
 

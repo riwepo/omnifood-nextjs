@@ -1,5 +1,7 @@
 import Meal from "../meals/meal";
 import Diets from "../meals/diets";
+import HeadingSecondary from "../ui/heading-secondary";
+import Subheading from "../ui/subheading";
 
 const meal1 = {
   index: 0,
@@ -33,12 +35,10 @@ function Meals() {
   return (
     <section id="meals" className="section-meals bg-white px-0 py-24">
       <div className="container m-auto max-w-[75rem] px-8 py-0 text-center">
-        <span className="mb-4 block text-base font-medium uppercase tracking-[0.75px] text-burnt-orange-200">
-          Meals
-        </span>
-        <h2 className="container mb-[6rem] text-5xl font-bold leading-tight tracking-[0.5px] text-greys-100">
+        <Subheading>Meals</Subheading>
+        <HeadingSecondary>
           Omnifood AI chooses from 5,000+ recipes
-        </h2>
+        </HeadingSecondary>
       </div>
 
       <div className="m-auto mb-12 grid max-w-[75rem] grid-cols-3 items-center gap-x-20 px-8 py-0">

@@ -1,14 +1,15 @@
 import Button from "../ui/button";
 import DeliveredImages from "./delivered-images";
+import HeadingPrimary from "../ui/heading-primary";
 
 function Hero() {
   return (
     <section className="bg-whites-100 pb-6 pl-0 pr-0 pt-12">
       <div className="mx-auto mb-8 grid max-w-[80rem] grid-cols-2 items-center gap-24 px-2">
         <div className="hero-text-box col-auto">
-          <h1 className="heading-primary mb-8 text-5xl font-bold tracking-[-0.5px] text-greys-100">
+          <HeadingPrimary>
             A healthy meal delivered to your door, every single day
-          </h1>
+          </HeadingPrimary>
           <p className="mb-12 text-xl">
             The smart 365-days-per-year food subscription that will make you eat
             healthy again. Tailored to your personal tastes and nutritional

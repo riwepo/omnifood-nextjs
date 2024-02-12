@@ -1,4 +1,6 @@
 import Step from "../how-it-works/step";
+import HeadingSecondary from "../ui/heading-secondary";
+import Subheading from "../ui/subheading";
 
 const step1 = {
   number: "01",
@@ -35,12 +37,10 @@ function HowItWorks() {
   return (
     <section id="how" className="bg-white px-0 py-24">
       <div className="m-auto max-w-[75rem] px-8 py-0">
-        <span className="mb-4 block text-base font-medium uppercase tracking-[0.75px] text-burnt-orange-200">
-          How it works
-        </span>
-        <h2 className="mb-[6rem] text-5xl font-bold leading-tight tracking-[0.5px] text-greys-100">
+        <Subheading>How it works</Subheading>
+        <HeadingSecondary>
           Your daily dose of health in 3 simple steps
-        </h2>
+        </HeadingSecondary>
       </div>
 
       <div className="m-auto grid max-w-[75rem] grid-cols-2 items-center gap-y-[6rem] px-8 py-0">
