@@ -28,7 +28,7 @@ function Step({ stepData }) {
   return (
     <>
       <div className={textOrderStr}>
-        <p className="text-greys-400 mb-4 text-[5.4rem] font-semibold">
+        <p className="mb-4 text-[5.4rem] font-semibold text-greys-400">
           {stepData.number}
         </p>
         <h3 className="mb-8 text-3xl font-bold leading-tight tracking-[0.5px] text-greys-100">
@@ -37,11 +37,13 @@ function Step({ stepData }) {
         <p className="text-lg leading-7">{stepData.description}</p>
       </div>
 
+      {/* TODO the bloody circles stopped working again */}
+
       <div
         className={`
+        relative
         before:bg-whites-100
         after:bg-whites-200
-        relative
         ${picOrderStr}
         flex
         items-center
