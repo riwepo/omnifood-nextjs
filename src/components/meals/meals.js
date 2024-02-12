@@ -1,4 +1,5 @@
 import Meal from "../meals/meal";
+import Diets from "../meals/diets";
 
 const meal1 = {
   index: 0,
@@ -43,7 +44,7 @@ function Meals() {
       <div className="m-auto mb-12 grid max-w-[75rem] grid-cols-3 items-center gap-x-20 px-8 py-0">
         <Meal mealData={meal1} />
         <Meal mealData={meal2} />
-        {/* <Step stepData={step3} /> */}
+        <Diets />
       </div>
     </section>
   );
