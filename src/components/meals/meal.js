@@ -8,7 +8,7 @@ function Meal({ mealData }) {
   const imgHeight = 467 * 0.35;
 
   return (
-    <div className="meal shadow-black/10 overflow-hidden rounded-xl bg-white shadow-xl">
+    <div className="meal shadow-black/10 overflow-hidden rounded-xl bg-white shadow-xl transition-all duration-700 hover:-translate-y-3">
       <Image
         src={mealData.imgSrc}
         alt={mealData.imgAlt}
