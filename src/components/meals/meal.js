@@ -8,7 +8,7 @@ function Meal({ mealData }) {
   const imgHeight = 467 * 0.35;
 
   return (
-    <div className="meal overflow-hidden rounded-xl">
+    <div className="meal shadow-black/10 overflow-hidden rounded-xl bg-white shadow-xl">
       <Image
         src={mealData.imgSrc}
         alt={mealData.imgAlt}
@@ -72,6 +72,11 @@ function Meal({ mealData }) {
 //   border-radius: 11px;
 //   overflow: hidden;
 //   transition: all 0.4s;
+// }
+
+// .meal:hover {
+//   transform: translateY(-1.2rem);
+//   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 // }
 
 // .meal-tags {
