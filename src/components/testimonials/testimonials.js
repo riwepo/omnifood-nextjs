@@ -1,5 +1,6 @@
 import HeadingSecondary from "../ui/heading-secondary";
 import Subheading from "../ui/subheading";
+import TestimonialPeople from "./testimonial-people";
 
 function Testimonials() {
   return (
@@ -10,6 +11,7 @@ function Testimonials() {
       <div className="testimonials-container p-24">
         <Subheading>Testimonials</Subheading>
         <HeadingSecondary>Once you try it, you can't go back</HeadingSecondary>
+        <TestimonialPeople />
       </div>
     </section>
   );

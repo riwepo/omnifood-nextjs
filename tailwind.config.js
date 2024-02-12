@@ -14,7 +14,13 @@ module.exports = {
       white: "#ffffff",
       "burnt-orange": { 100: "#e67e22", 200: "#cf711f" },
       whites: { 100: "#fdf2e9", 200: "#fae5d3" },
-      greys: { 100: "#333", 200: "#555", 300: "#888", 400: "#ddd" },
+      greys: {
+        100: "#333",
+        200: "#555",
+        300: "#888",
+        400: "#ddd",
+        500: "#6f6f6f",
+      },
       tags: { vegetarian: "#51cf66", vegan: "#94d82d", paleo: "#ffd43b" },
     },
     extend: {
