@@ -30,7 +30,7 @@ const meal2 = {
 
 function Meals() {
   return (
-    <section id="meals" className="bg-white px-0 py-24">
+    <section id="meals" className="meals bg-white px-0 py-24">
       <div className="m-auto max-w-[75rem] px-8 py-0 text-center">
         <span className="mb-4 block text-base font-medium uppercase tracking-[0.75px] text-burnt-orange-200">
           Meals
