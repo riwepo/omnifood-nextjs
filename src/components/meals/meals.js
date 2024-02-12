@@ -30,17 +30,17 @@ const meal2 = {
 
 function Meals() {
   return (
-    <section id="meals" className="meals bg-white px-0 py-24">
-      <div className="m-auto max-w-[75rem] px-8 py-0 text-center">
+    <section id="meals" className="section-meals bg-white px-0 py-24">
+      <div className="container m-auto max-w-[75rem] px-8 py-0 text-center">
         <span className="mb-4 block text-base font-medium uppercase tracking-[0.75px] text-burnt-orange-200">
           Meals
         </span>
-        <h2 className="mb-[6rem] text-5xl font-bold leading-tight tracking-[0.5px] text-greys-100">
+        <h2 className="container mb-[6rem] text-5xl font-bold leading-tight tracking-[0.5px] text-greys-100">
           Omnifood AI chooses from 5,000+ recipes
         </h2>
       </div>
 
-      <div className="m-auto mb-12 grid max-w-[75rem] grid-cols-3 items-center gap-y-[6rem] px-8 py-0">
+      <div className="m-auto mb-12 grid max-w-[75rem] grid-cols-3 items-center gap-x-20 px-8 py-0">
         <Meal mealData={meal1} />
         <Meal mealData={meal2} />
         {/* <Step stepData={step3} /> */}
@@ -48,5 +48,12 @@ function Meals() {
     </section>
   );
 }
+
+// .container {
+//   /* 1140px */
+//   max-width: 120rem;
+//   padding: 0 3.2rem;
+//   margin: 0 auto;
+// }
 
 export default Meals;

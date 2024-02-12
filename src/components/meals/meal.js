@@ -4,8 +4,10 @@ import StarIcon from "../../../public/icons/meals/star-outline.svg";
 import RestaurantIcon from "../../../public/icons/meals/restaurant-outline.svg";
 
 function Meal({ mealData }) {
-  const imgWidth = 700 * 0.35;
-  const imgHeight = 467 * 0.35;
+  // const imgWidth = 700 * 0.35;
+  // const imgHeight = 467 * 0.35;
+  const imgWidth = 700;
+  const imgHeight = 467;
 
   return (
     <div className="meal shadow-black/10 overflow-hidden rounded-xl bg-white shadow-xl transition-all duration-700 hover:-translate-y-3">
@@ -16,8 +18,8 @@ function Meal({ mealData }) {
         height={imgHeight}
       />
       <div>
-        <div className="meal-content">
-          <div className="meal-tags  flex gap-3">
+        <div className="meal-content pb-12 pl-12 pr-12 pt-8">
+          <div className="meal-tags mb-3 flex gap-3">
             {mealData.tags.map((tag) => {
               return (
                 <span
@@ -29,39 +31,40 @@ function Meal({ mealData }) {
               );
             })}
           </div>
+
+          <p className="meal-title mb-8 text-2xl font-semibold text-greys-100">
+            {mealData.heading}
+          </p>
+          <ul className="meal-attributes flex list-none flex-col gap-5">
+            <li className="meal-attribute flex items-center gap-4 text-lg">
+              <FlameIcon
+                className="meal-icon h-8 w-8 text-burnt-orange-100"
+                name="flame-outline"
+              />
+              <span>
+                <strong>{mealData.calories}</strong> calories
+              </span>
+            </li>
+            <li className="meal-attribute flex items-center gap-4 text-lg">
+              <RestaurantIcon
+                className="restaurant-icon h-8 w-8 text-burnt-orange-100"
+                name="restaurant-outline"
+              />
+              <span>
+                NutriScore &reg; <strong>{mealData.nutriScore}</strong>
+              </span>
+            </li>
+            <li className="meal-attribute flex items-center gap-4 text-lg">
+              <StarIcon
+                className="star-icon h-8 w-8 text-burnt-orange-100"
+                name="star-outline"
+              ></StarIcon>
+              <span>
+                <strong>{mealData.rating}</strong> rating ({mealData.reviews})
+              </span>
+            </li>
+          </ul>
         </div>
-        <p className="meal-title mb-8 text-2xl font-semibold text-greys-100">
-          {mealData.heading}
-        </p>
-        <ul className="meal-attributes flex list-none flex-col gap-5">
-          <li className="meal-attribute flex items-center gap-4 text-lg">
-            <FlameIcon
-              className="meal-icon h-8 w-8 text-burnt-orange-100"
-              name="flame-outline"
-            />
-            <span>
-              <strong>{mealData.calories}</strong> calories
-            </span>
-          </li>
-          <li className="meal-attribute flex items-center gap-4 text-lg">
-            <RestaurantIcon
-              className="restaurant-icon h-8 w-8 text-burnt-orange-100"
-              name="restaurant-outline"
-            />
-            <span>
-              NutriScore &reg; <strong>{mealData.nutriScore}</strong>
-            </span>
-          </li>
-          <li className="meal-attribute flex items-center gap-4 text-lg">
-            <StarIcon
-              className="star-icon h-8 w-8 text-burnt-orange-100"
-              name="star-outline"
-            ></StarIcon>
-            <span>
-              <strong>{mealData.rating}</strong> rating ({mealData.reviews})
-            </span>
-          </li>
-        </ul>
       </div>
     </div>
   );
@@ -77,6 +80,10 @@ function Meal({ mealData }) {
 // .meal:hover {
 //   transform: translateY(-1.2rem);
 //   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+// }
+
+// .meal-content {
+//   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 // }
 
 // .meal-tags {
