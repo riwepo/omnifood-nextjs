@@ -8,42 +8,14 @@ function Diets() {
       </h3>
       <ul className="list flex list-none flex-col gap-4">
         <Diet text="Vegetarian" />
-        <li class="list-item">
-          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-          <span>Vegetarian</span>
-        </li>
-        <li class="list-item">
-          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-          <span>Vegan</span>
-        </li>
-        <li class="list-item">
-          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-          <span>Pescatarian</span>
-        </li>
-        <li class="list-item">
-          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-          <span>Gluten-free</span>
-        </li>
-        <li class="list-item">
-          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-          <span>Lactose-free</span>
-        </li>
-        <li class="list-item">
-          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-          <span>Keto</span>
-        </li>
-        <li class="list-item">
-          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-          <span>Paleo</span>
-        </li>
-        <li class="list-item">
-          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-          <span>Low FODMAP</span>
-        </li>
-        <li class="list-item">
-          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-          <span>Kid-friendly</span>
-        </li>
+        <Diet text="Vegan" />
+        <Diet text="Pescatarian" />
+        <Diet text="Gluten-free" />
+        <Diet text="Lactose-free" />
+        <Diet text="Keto" />
+        <Diet text="Paleo" />
+        <Diet text="Low FODMAP" />
+        <Diet text="Kid-friendly" />
       </ul>
     </div>
   );
