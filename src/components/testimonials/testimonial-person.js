@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function TestimonialPerson() {
+function TestimonialPerson({ personData }) {
   const imgWidth = 128 * 1;
   const imgHeight = 128 * 1;
   return (
@@ -9,15 +9,14 @@ function TestimonialPerson() {
         width={imgHeight}
         height={imgWidth}
         className="testimonial-img mb-5 rounded-full"
-        alt="Photo of customer Dave Bryson"
-        src="/img/customers/testimonials/dave.jpg"
+        alt={`Photo of customer ${personData.name}`}
+        src={personData.imgSrc}
       />
       <blockquote className="testimonial-text mb-4 text-lg leading-relaxed">
-        Inexpensive, healthy and great-tasting meals, without even having to
-        order manually! It feels truly magical.
+        {personData.text}
       </blockquote>
       <p className="testimonial-name text-greys-500 text-base">
-        &mdash; Dave Bryson
+        &mdash; {personData.name}
       </p>
     </figure>
   );
