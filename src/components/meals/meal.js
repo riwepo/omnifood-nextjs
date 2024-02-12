@@ -17,54 +17,53 @@ function Meal({ mealData }) {
         width={imgWidth}
         height={imgHeight}
       />
-      <div>
-        <div className="meal-content pb-12 pl-12 pr-12 pt-8">
-          <div className="meal-tags mb-3 flex gap-3">
-            {mealData.tags.map((tag) => {
-              return (
-                <span
-                  key={tag.id}
-                  className={`${tag.colour} inline-block rounded-xl px-2 py-1 text-xs font-semibold uppercase text-greys-100`}
-                >
-                  {tag.heading}
-                </span>
-              );
-            })}
-          </div>
 
-          <p className="meal-title mb-8 text-2xl font-semibold text-greys-100">
-            {mealData.heading}
-          </p>
-          <ul className="meal-attributes flex list-none flex-col gap-5">
-            <li className="meal-attribute flex items-center gap-4 text-lg">
-              <FlameIcon
-                className="meal-icon h-8 w-8 text-burnt-orange-100"
-                name="flame-outline"
-              />
-              <span>
-                <strong>{mealData.calories}</strong> calories
+      <div className="meal-content pb-12 pl-12 pr-12 pt-8">
+        <div className="meal-tags mb-3 flex gap-3">
+          {mealData.tags.map((tag) => {
+            return (
+              <span
+                key={tag.id}
+                className={`${tag.colour} inline-block rounded-xl px-2 py-1 text-xs font-semibold uppercase text-greys-100`}
+              >
+                {tag.heading}
               </span>
-            </li>
-            <li className="meal-attribute flex items-center gap-4 text-lg">
-              <RestaurantIcon
-                className="restaurant-icon h-8 w-8 text-burnt-orange-100"
-                name="restaurant-outline"
-              />
-              <span>
-                NutriScore &reg; <strong>{mealData.nutriScore}</strong>
-              </span>
-            </li>
-            <li className="meal-attribute flex items-center gap-4 text-lg">
-              <StarIcon
-                className="star-icon h-8 w-8 text-burnt-orange-100"
-                name="star-outline"
-              ></StarIcon>
-              <span>
-                <strong>{mealData.rating}</strong> rating ({mealData.reviews})
-              </span>
-            </li>
-          </ul>
+            );
+          })}
         </div>
+
+        <p className="meal-title mb-8 text-2xl font-semibold text-greys-100">
+          {mealData.heading}
+        </p>
+        <ul className="meal-attributes flex list-none flex-col gap-5">
+          <li className="meal-attribute flex items-center gap-4 text-lg">
+            <FlameIcon
+              className="meal-icon h-8 w-8 text-burnt-orange-100"
+              name="flame-outline"
+            />
+            <span>
+              <strong>{mealData.calories}</strong> calories
+            </span>
+          </li>
+          <li className="meal-attribute flex items-center gap-4 text-lg">
+            <RestaurantIcon
+              className="restaurant-icon h-8 w-8 text-burnt-orange-100"
+              name="restaurant-outline"
+            />
+            <span>
+              NutriScore &reg; <strong>{mealData.nutriScore}</strong>
+            </span>
+          </li>
+          <li className="meal-attribute flex items-center gap-4 text-lg">
+            <StarIcon
+              className="star-icon h-8 w-8 text-burnt-orange-100"
+              name="star-outline"
+            ></StarIcon>
+            <span>
+              <strong>{mealData.rating}</strong> rating ({mealData.reviews})
+            </span>
+          </li>
+        </ul>
       </div>
     </div>
   );
