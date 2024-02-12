@@ -4,8 +4,6 @@ import StarIcon from "../../../public/icons/meals/star-outline.svg";
 import RestaurantIcon from "../../../public/icons/meals/restaurant-outline.svg";
 
 function Meal({ mealData }) {
-  // const imgWidth = 700 * 0.35;
-  // const imgHeight = 467 * 0.35;
   const imgWidth = 700;
   const imgHeight = 467;
 
