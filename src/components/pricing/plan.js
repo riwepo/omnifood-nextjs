@@ -1,4 +1,5 @@
 import Feature from "./feature";
+import Button from "../ui/button";
 
 function Plan({ planData }) {
   return (
@@ -26,10 +27,10 @@ function Plan({ planData }) {
           );
         })}
       </ul>
-      <div className="plan-sing-up">
-        <a href="#" class="btn btn--full">
+      <div className="plan-sign-up mt-12 text-center">
+        <Button href="#" full={true}>
           Start eating well
-        </a>
+        </Button>
       </div>
     </div>
   );
