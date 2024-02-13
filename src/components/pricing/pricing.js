@@ -1,33 +1,6 @@
 import HeadingSecondary from "../ui/heading-secondary";
 import Subheading from "../ui/subheading";
-
-const meal1 = {
-  index: 0,
-  imgSrc: "/img/meals/meal-1.jpg",
-  imgAlt: "Japanese Gyozas",
-  tags: [
-    { id: "vegetarian", heading: "Vegetarian", colour: "bg-tags-vegetarian" },
-  ],
-  heading: "Japanese Gyozas",
-  calories: 650,
-  nutriScore: 74,
-  rating: 4.9,
-  reviews: 537,
-};
-const meal2 = {
-  index: 1,
-  imgSrc: "/img/meals/meal-2.jpg",
-  imgAlt: "Avocado Salad",
-  tags: [
-    { id: "vegan", heading: "Vegan", colour: "bg-tags-vegan" },
-    { id: "paleo", heading: "Paleo", colour: "bg-tags-paleo" },
-  ],
-  heading: "Avocado Salad",
-  calories: 400,
-  nutriScore: 92,
-  rating: 4.8,
-  reviews: 441,
-};
+import Plans from "../pricing/plans";
 
 function Pricing() {
   return (
@@ -38,6 +11,7 @@ function Pricing() {
           Eating well without breaking the bank
         </HeadingSecondary>
       </div>
+      <Plans />
     </section>
   );
 }
