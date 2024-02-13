@@ -5,6 +5,7 @@ import HowItWorks from "@/components/how-it-works";
 import Meals from "@/components/meals";
 import Testimonials from "@/components/testimonials";
 import Pricing from "@/components/pricing";
+import CallToAction from "@/components/call-to-action";
 
 function Home() {
   return (
@@ -14,8 +15,9 @@ function Home() {
       <Featured />
       <HowItWorks />
       <Meals /> 
-      <Testimonials />*/}
-      <Pricing />
+      <Testimonials />
+      <Pricing />*/}
+      <CallToAction />
     </>
   );
 }
