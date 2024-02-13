@@ -1,6 +1,6 @@
 import Feature from "./feature";
 
-function Plan() {
+function Plan({ features }) {
   return (
     <div className="pricing-plan pricing-plan--starter w-3/4 justify-self-end rounded-xl border-2 border-whites-100  p-12">
       <header className="plan-header mb-12 text-center">
@@ -15,12 +15,17 @@ function Plan() {
         </p>
       </header>
       <ul className="list flex list-none flex-col gap-4">
-        <Feature text="1 meal per day" />
-        <Feature text="Order from 11am to 9pm" />
-        <Feature text="Delivery is free" />
-        <Feature text="1 meal per day" />
+        {features.map((feature) => {
+          return (
+            <Feature
+              key={feature.index}
+              isChecked={feature.isChecked}
+              markup={feature.markup}
+            />
+          );
+        })}
       </ul>
-      <div class="plan-sing-up">
+      <div className="plan-sing-up">
         <a href="#" class="btn btn--full">
           Start eating well
         </a>
