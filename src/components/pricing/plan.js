@@ -5,10 +5,12 @@ function Plan() {
         <p className="plan-name mb-8 text-xl font-semibold uppercase tracking-[0.75px] text-burnt-orange-200">
           Starter
         </p>
-        <p class="plan-price">
+        <p className="plan-price mb-4 text-6xl font-semibold text-greys-100">
           <span>$</span>399
         </p>
-        <p class="plan-text">per month. That's just $13 per meal!</p>
+        <p className="plan-text text-base leading-relaxed text-greys-500">
+          per month. That's just $13 per meal!
+        </p>
       </header>
       <ul class="list">
         <li class="list-item">
