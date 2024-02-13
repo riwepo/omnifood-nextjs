@@ -49,10 +49,19 @@ function Plans() {
   };
 
   return (
-    <div className="container m-auto mb-12 grid max-w-[75rem] grid-cols-2 gap-x-16 gap-y-24 px-8 py-0">
-      <Plan planData={plan1Data} />
-      <Plan planData={plan2Data} />
-    </div>
+    <>
+      <div className="container mx-auto my-0 mb-12 grid max-w-[75rem] grid-cols-2 gap-x-16 gap-y-24 px-8 py-0">
+        <Plan planData={plan1Data} />
+        <Plan planData={plan2Data} />
+      </div>
+
+      <div className="container mx-auto my-0 grid max-w-[75rem] px-8 py-0">
+        <aside className="plan-details text-center text-base leading-normal">
+          Prices include all applicable taxes. You can cancel at any time. Both
+          plans include the following:
+        </aside>
+      </div>
+    </>
   );
 }
 
@@ -82,6 +91,12 @@ function Plans() {
 // .link:active {
 //   color: #cf711f;
 //   border-bottom: 1px solid transparent;
+// }
+
+// .plan-details {
+//   font-size: 1.6rem;
+//   line-height: 1.6;
+//   text-align: center;
 // }
 
 export default Plans;
