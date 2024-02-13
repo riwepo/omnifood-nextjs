@@ -49,7 +49,7 @@ function Plans() {
   };
 
   return (
-    <div className="container m-auto mb-12 grid max-w-[75rem] grid-cols-2 px-8 py-0">
+    <div className="container m-auto mb-12 grid max-w-[75rem] grid-cols-2 gap-x-16 gap-y-24 px-8 py-0">
       <Plan planData={plan1Data} />
       <Plan planData={plan2Data} />
     </div>
