@@ -7,12 +7,7 @@ function Feature({ featureData }) {
       <p className="feature-title mb-4 text-2xl font-bold text-greys-100">
         {featureData.title}
       </p>
-      <p class="feature-title">Never cook again!</p>
-      <p class="feature-text">{featureData.text}</p>
-      <p class="feature-text">
-        Our subscriptions cover 365 days per year, even including major
-        holidays.
-      </p>
+      <p className="feature-text text-lg leading-normal">{featureData.text}</p>
     </div>
   );
 }
