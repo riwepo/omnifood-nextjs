@@ -4,7 +4,9 @@ function Feature({ featureData }) {
       <div className="mb-4 h-16 w-16 rounded-full bg-whites-100 p-4">
         {featureData.icon}
       </div>
-      <p class="feature-title">{featureData.title}</p>
+      <p className="feature-title mb-4 text-2xl font-bold text-greys-100">
+        {featureData.title}
+      </p>
       <p class="feature-title">Never cook again!</p>
       <p class="feature-text">{featureData.text}</p>
       <p class="feature-text">
