@@ -1,3 +1,5 @@
+import Feature from "./feature";
+
 function Plan() {
   return (
     <div className="pricing-plan pricing-plan--starter w-3/4 justify-self-end rounded-xl border-2 border-whites-100  p-12">
@@ -12,22 +14,11 @@ function Plan() {
           per month. That's just $13 per meal!
         </p>
       </header>
-      <ul class="list">
-        <li class="list-item">
-          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-          <span>1 meal per day</span>
-        </li>
-        <li class="list-item">
-          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-          <span>Order from 11am to 9pm</span>
-        </li>
-        <li class="list-item">
-          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-          <span>Delivery is free</span>
-        </li>
-        <li class="list-item">
-          <ion-icon class="list-icon" name="close-outline"></ion-icon>
-        </li>
+      <ul className="list flex list-none flex-col gap-4">
+        <Feature text="1 meal per day" />
+        <Feature text="Order from 11am to 9pm" />
+        <Feature text="Delivery is free" />
+        <Feature text="1 meal per day" />
       </ul>
       <div class="plan-sing-up">
         <a href="#" class="btn btn--full">
@@ -94,4 +85,11 @@ export default Plan;
 //   font-size: 1.6rem;
 //   line-height: 1.6;
 //   text-align: center;
+// }
+
+// .list {
+//   list-style: none;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 1.6rem;
 // }
