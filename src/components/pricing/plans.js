@@ -1,8 +1,9 @@
+import Plan from "./plan";
 function Plans() {
   return (
     <div className="container m-auto mb-12 grid max-w-[75rem] grid-cols-2 px-8 py-0">
-      <h1>plan1</h1>
-      <h1>plan1</h1>
+      <Plan />
+      <Plan />
     </div>
   );
 }
