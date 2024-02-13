@@ -1,4 +1,4 @@
-import Feature from "./feature";
+import PlanItem from "./planItem";
 import Button from "../ui/button";
 
 function Plan({ planData }) {
@@ -62,16 +62,16 @@ function Plan({ planData }) {
           {planData.price}
         </p>
         <p className="plan-text text-base leading-relaxed text-greys-500">
-          {planData.dedcription}
+          {planData.description}
         </p>
       </header>
       <ul className="list flex list-none flex-col gap-4">
-        {planData.features.map((feature) => {
+        {planData.items.map((itemData) => {
           return (
-            <Feature
-              key={feature.index}
-              isChecked={feature.isChecked}
-              markup={feature.markup}
+            <PlanItem
+              key={itemData.index}
+              isChecked={itemData.isChecked}
+              markup={itemData.markup}
             />
           );
         })}

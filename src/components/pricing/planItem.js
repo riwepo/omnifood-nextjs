@@ -1,7 +1,7 @@
 import CheckmarkIcon from "../../../public/icons/checkmark-outline.svg";
 import CloseIcon from "../../../public/icons/close-outline.svg";
 
-function Feature({ isChecked, markup }) {
+function PlanItem({ isChecked, markup }) {
   return (
     <li className="list-itemxxx flex items-center gap-4 text-lg leading-tight">
       {isChecked && (
@@ -22,4 +22,4 @@ function Feature({ isChecked, markup }) {
   );
 }
 
-export default Feature;
+export default PlanItem;

@@ -5,7 +5,7 @@ function Plans() {
     name: "Starter",
     price: "399",
     description: "per month. That's just $13 per meal!",
-    features: [
+    items: [
       { index: 0, isChecked: true, markup: <span>1 meal per day</span> },
       {
         index: 1,
@@ -20,7 +20,7 @@ function Plans() {
     name: "Complete",
     price: "649",
     description: "per month. That's just $11 per meal!",
-    features: [
+    items: [
       {
         index: 0,
         isChecked: true,
