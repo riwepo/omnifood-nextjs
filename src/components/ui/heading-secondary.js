@@ -1,6 +1,6 @@
 function HeadingSecondary({ children }) {
   return (
-    <h2 className="mb-24 text-[2.75rem] font-bold leading-5 tracking-[-0.5px] text-greys-100">
+    <h2 className="mb-24 text-left text-[2.75rem] font-bold leading-5 tracking-[-0.5px] text-greys-100">
       {children}
     </h2>
   );
