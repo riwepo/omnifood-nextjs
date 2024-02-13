@@ -1,4 +1,4 @@
-import CheckmarkIcon from "../../../public/icons/meals/checkmark-outline.svg";
+import CheckmarkIcon from "../../../public/icons/checkmark-outline.svg";
 function Diet({ text }) {
   return (
     <li className="list-itemxx flex items-center gap-4 text-lg leading-tight">
