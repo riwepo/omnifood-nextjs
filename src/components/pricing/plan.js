@@ -2,8 +2,57 @@ import Feature from "./feature";
 import Button from "../ui/button";
 
 function Plan({ planData }) {
+  let customClasses = "";
+  if (planData.name === "Starter") {
+    customClasses = "justify-self-end border-2 border-whites-100";
+  } else if (planData.name === "Complete") {
+    customClasses = `
+    bg-whites-100
+    relative
+    overflow-hidden
+    after:absolute
+    after:right-[-18%]
+    after:top-[6%]
+    after:rotate-45
+    after:bg-tags-paleo
+    after:px-[5rem]
+    after:py-[0.5rem]
+    after:text-sm
+    after:font-bold
+    after:uppercase
+    after:text-greys-100
+    after:content-["Best_Value"]`;
+  }
+
+  //   background-color: #fdf2e9;
+  //   padding: 4.8rem;
+  //   position: relative;
+  //   overflow: hidden;
+  // }
+
+  // .pricing-plan--complete::after {
+  //   content: "Best value";
+  //   position: absolute;
+  //   top: 6%;
+  //   right: -18%;
+  //   text-transform: uppercase;
+  //   font-size: 1.4rem;
+  //   font-weight: 700;
+  //   color: #333;
+  //   background-color: #ffd43b;
+  //   padding: 0.8rem 8rem;
+  //   transform: rotate(45deg);
+
   return (
-    <div className="pricing-plan pricing-plan--starter w-3/4 justify-self-end rounded-xl border-2 border-whites-100  p-12">
+    <div
+      className={`
+      pricing-plan
+      pricing-plan--starter
+      w-3/4
+      rounded-xl
+      p-12
+      ${customClasses}`}
+    >
       <header className="plan-header mb-12 text-center">
         <p className="plan-name mb-8 text-xl font-semibold uppercase tracking-[0.75px] text-burnt-orange-200">
           {planData.name}
@@ -99,4 +148,32 @@ export default Plan;
 //   display: flex;
 //   flex-direction: column;
 //   gap: 1.6rem;
+// }
+
+// .pricing-plan--starter {
+//   justify-self: end;
+//   border: 2px solid #fdf2e9;
+//   padding: 4.6rem;
+// }
+
+// .pricing-plan--complete {
+//   background-color: #fdf2e9;
+//   padding: 4.8rem;
+//   position: relative;
+//   overflow: hidden;
+// }
+
+// .pricing-plan--complete::after {
+//   content: "Best value";
+//   position: absolute;
+//   top: 6%;
+//   right: -18%;
+
+//   text-transform: uppercase;
+//   font-size: 1.4rem;
+//   font-weight: 700;
+//   color: #333;
+//   background-color: #ffd43b;
+//   padding: 0.8rem 8rem;
+//   transform: rotate(45deg);
 // }
