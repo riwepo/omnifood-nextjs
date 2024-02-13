@@ -1,6 +1,13 @@
+import Feature from "./feature";
+
 function Inclusions() {
+  const feature1 = {
+    title: "Never cook again!",
+    text: "Our subscriptions cover 365 days per year, even including major holidays.",
+  };
   return (
     <div className="grid--4-cols container mx-auto my-0 mb-12 grid max-w-[75rem] grid-cols-4">
+      <Feature featureData={feature1} />
       <div class="feature">
         <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
         <p class="feature-title">Never cook again!</p>
