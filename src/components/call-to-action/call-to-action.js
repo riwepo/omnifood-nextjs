@@ -5,7 +5,7 @@ function CallToAction() {
       className="section-cta bg-white px-0 pb-32 pt-12"
     >
       <div className="container m-auto max-w-[75rem] px-8 py-0 text-center">
-        <div className="cta grid grid-cols-[2fr_1fr]">
+        <div className="cta grid grid-cols-[2fr_1fr] rounded-xl bg-burnt-orange-100 shadow-xl shadow-black/25">
           <div class="cta-text-box">
             <h2 class="heading-secondary">Get your first meal for free!</h2>
             <p class="cta-text">
