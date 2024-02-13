@@ -1,21 +1,22 @@
 import Feature from "./feature";
 
-function Plan({ features }) {
+function Plan({ planData }) {
   return (
     <div className="pricing-plan pricing-plan--starter w-3/4 justify-self-end rounded-xl border-2 border-whites-100  p-12">
       <header className="plan-header mb-12 text-center">
         <p className="plan-name mb-8 text-xl font-semibold uppercase tracking-[0.75px] text-burnt-orange-200">
-          Starter
+          {planData.name}
         </p>
         <p className="plan-price mb-4 text-6xl font-semibold text-greys-100">
-          <span>$</span>399
+          <span>$</span>
+          {planData.price}
         </p>
         <p className="plan-text text-base leading-relaxed text-greys-500">
-          per month. That's just $13 per meal!
+          {planData.dedcription}
         </p>
       </header>
       <ul className="list flex list-none flex-col gap-4">
-        {features.map((feature) => {
+        {planData.features.map((feature) => {
           return (
             <Feature
               key={feature.index}
