@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SocialLinks from "./social-links";
+import ContactUs from "./contact-us";
 
 function Footer() {
   const imgScale = 7.4;
@@ -19,16 +20,16 @@ function Footer() {
               src="/img/omnifood-logo.png"
             />
           </a>
-
           <SocialLinks />
-
-          <p className="copyright">
+          <p className="copyright text-greys-700 mt-auto text-sm leading-normal">
             Copyright &copy; <span className="year">2027</span> by Omnifood,
             Inc. All rights reserved.
           </p>
         </div>
 
-        <div className="address-col">
+        <ContactUs />
+
+        {/* <div className="address-col">
           <p className="footer-heading">Contact us</p>
           <address className="contacts">
             <p className="address">
@@ -44,7 +45,7 @@ function Footer() {
               </a>
             </p>
           </address>
-        </div>
+        </div> */}
 
         <nav className="nav-col">
           <p className="footer-heading">Account</p>
