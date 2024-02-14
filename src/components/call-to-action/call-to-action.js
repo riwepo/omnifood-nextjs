@@ -8,8 +8,8 @@ function CallToAction() {
       className="section-cta bg-white px-0 pb-32 pt-12"
     >
       <div className="container m-auto max-w-[75rem] px-8 py-0 text-center">
-        <div className="cta from-burnt-orange-400 grid grid-cols-[2fr_1fr] rounded-xl bg-gradient-to-br to-burnt-orange-100 shadow-xl shadow-black/25">
-          <div className="cta-text-box text-burnt-orange-300 pb-16 pl-16 pr-16 pt-12">
+        <div className="cta grid grid-cols-[2fr_1fr] rounded-xl bg-gradient-to-br from-burnt-orange-400 to-burnt-orange-100 shadow-xl shadow-black/25">
+          <div className="cta-text-box pb-16 pl-16 pr-16 pt-12 text-burnt-orange-300">
             <HeadingSecondary extraClasses="text-inherit mb-8">
               Get your first meal for free!
             </HeadingSecondary>
@@ -89,7 +89,7 @@ function CallToAction() {
             </form>
           </div>
           <div
-            className="cta-img-box"
+            className="cta-img-box bg-[url('/img/eating.jpg')] bg-cover bg-center"
             role="img"
             aria-label="Woman enjoying food"
           ></div>
