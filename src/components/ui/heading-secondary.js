@@ -1,9 +1,11 @@
-function HeadingSecondary({ children }) {
-  return (
-    <h2 className="mb-24 text-left text-[2.75rem] font-bold leading-5 tracking-[-0.5px] text-greys-100">
-      {children}
-    </h2>
+import { cn } from "../../lib/utils";
+
+function HeadingSecondary({ children, extraClasses }) {
+  const classes = cn(
+    "mb-24 text-left text-[2.75rem] font-bold leading-5 tracking-[-0.5px] text-greys-100",
+    extraClasses,
   );
+  return <h2 className={classes}>{children}</h2>;
 }
 
 export default HeadingSecondary;
