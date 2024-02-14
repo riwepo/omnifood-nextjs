@@ -1,5 +1,5 @@
 import PlanItem from "./planItem";
-import Button from "../ui/button";
+import { Button1 } from "../ui/buttons";
 
 function Plan({ planData }) {
   let customClasses = "";
@@ -77,9 +77,7 @@ function Plan({ planData }) {
         })}
       </ul>
       <div className="plan-sign-up mt-12 text-center">
-        <Button href="#" full={true}>
-          Start eating well
-        </Button>
+        <Button1 href="#">Start eating well</Button1>
       </div>
     </div>
   );

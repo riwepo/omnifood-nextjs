@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import { Button1 } from "../ui/buttons";
+
 function StyledNavLink({ children, href }) {
   return (
     <Link
@@ -11,16 +13,16 @@ function StyledNavLink({ children, href }) {
     </Link>
   );
 }
-function ButtonNavLink({ children, href }) {
-  return (
-    <Link
-      className="rounded-lg bg-burnt-orange-100 px-6 py-3 text-lg font-medium text-white hover:bg-burnt-orange-200 active:bg-burnt-orange-200"
-      href={href}
-    >
-      {children}
-    </Link>
-  );
-}
+// function ButtonNavLink({ children, href }) {
+//   return (
+//     <Link
+//       className="rounded-lg bg-burnt-orange-100 px-6 py-3 text-lg font-medium text-white hover:bg-burnt-orange-200 active:bg-burnt-orange-200"
+//       href={href}
+//     >
+//       {children}
+//     </Link>
+//   );
+// }
 
 // padding: 1.2rem 2.4rem;
 //   border-radius: 9px;
@@ -29,7 +31,7 @@ function ButtonNavLink({ children, href }) {
 
 function Header() {
   return (
-    <header className="bg-whites-100 flex h-24 items-center justify-between px-10 py-0">
+    <header className="flex h-24 items-center justify-between bg-whites-100 px-10 py-0">
       <Link href="/">
         <Image
           alt="Omnifood logo"
@@ -56,7 +58,9 @@ function Header() {
             <StyledNavLink href="#testimonials">Pricing</StyledNavLink>
           </li>
           <li>
-            <ButtonNavLink href="#pricing">Try for free</ButtonNavLink>
+            <Button1 href="#pricing" extraClasses="px-4 py-2 text-lg">
+              Try for free
+            </Button1>
           </li>
         </ul>
       </nav>

@@ -1,4 +1,4 @@
-import Button from "../ui/button";
+import { Button1, Button2 } from "../ui/buttons";
 import DeliveredImages from "./delivered-images";
 import HeadingPrimary from "../ui/heading-primary";
 
@@ -15,12 +15,10 @@ function Hero() {
             healthy again. Tailored to your personal tastes and nutritional
             needs.
           </p>
-          <Button href="#cta" full={true} extraClasses="mr-4">
+          <Button1 href="#cta" extraClasses="mr-4">
             Start eating well
-          </Button>
-          <Button href="#how" full={false}>
-            Learn more &darr;
-          </Button>
+          </Button1>
+          <Button2 href="#how">Learn more &darr;</Button2>
 
           <div className="mt-20 flex items-center gap-4">
             <DeliveredImages />
