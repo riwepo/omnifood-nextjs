@@ -12,7 +12,13 @@ module.exports = {
       current: "currentColor",
       black: "#000",
       white: "#ffffff",
-      "burnt-orange": { 100: "#e67e22", 200: "#cf711f" },
+      "burnt-orange": {
+        100: "#e67e22",
+        200: "#cf711f",
+        300: "#45260a",
+        400: "#eb984e",
+        500: "",
+      },
       whites: { 100: "#fdf2e9", 200: "#fae5d3" },
       greys: {
         100: "#333",
