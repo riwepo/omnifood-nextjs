@@ -11,13 +11,15 @@ function Home() {
   return (
     <>
       <Header />
-      <Hero />
-      <Featured />
-      <HowItWorks />
-      <Meals />
-      <Testimonials />
-      <Pricing />
-      <CallToAction />
+      <main>
+        <Hero />
+        <Featured />
+        <HowItWorks />
+        <Meals />
+        <Testimonials />
+        <Pricing />
+        <CallToAction />
+      </main>
     </>
   );
 }
