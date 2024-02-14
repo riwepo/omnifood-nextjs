@@ -1,4 +1,6 @@
 import Image from "next/image";
+import SocialLinks from "./social-links";
+
 function Footer() {
   const imgScale = 7.4;
   const imgHeight = 163 / imgScale;
@@ -16,39 +18,9 @@ function Footer() {
               alt="Omnifood logo"
               src="/img/omnifood-logo.png"
             />
-            {/* <img
-              className="logo"
-              alt="Omnifood logo"
-              src="img/omnifood-logo.png"
-            /> */}
           </a>
 
-          <ul className="social-links">
-            <li>
-              <a className="footer-link" href="#">
-                <ion-icon
-                  className="social-icon"
-                  name="logo-instagram"
-                ></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a className="footer-link" href="#">
-                <ion-icon
-                  className="social-icon"
-                  name="logo-facebook"
-                ></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a className="footer-link" href="#">
-                <ion-icon
-                  className="social-icon"
-                  name="logo-twitter"
-                ></ion-icon>
-              </a>
-            </li>
-          </ul>
+          <SocialLinks />
 
           <p className="copyright">
             Copyright &copy; <span className="year">2027</span> by Omnifood,
