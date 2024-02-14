@@ -1,6 +1,6 @@
 function Feature({ featureData }) {
   return (
-    <div class="feature">
+    <div className="feature">
       <div className="mb-4 h-16 w-16 rounded-full bg-whites-100 p-4">
         {featureData.icon}
       </div>
