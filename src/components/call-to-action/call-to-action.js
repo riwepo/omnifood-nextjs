@@ -18,10 +18,20 @@ function CallToAction() {
               meal is on us!
             </p>
             {/* <form className="cta-form" name="sign-up" netlify> */}
-            <form className="cta-form" name="sign-up">
+            <form
+              className="cta-form grid grid-cols-2 gap-x-8 gap-y-6"
+              name="sign-up"
+            >
               <div>
-                <label for="full-name">Full Name</label>
+                <label
+                  className="mb-3 block text-base font-medium"
+                  htmlFor="full-name"
+                >
+                  Full Name
+                </label>
+
                 <input
+                  className="text-inherit w-full rounded-lg border-none bg-whites-100 p-3 text-lg shadow-black/10"
                   id="full-name"
                   type="text"
                   placeholder="John Smith"
@@ -31,8 +41,14 @@ function CallToAction() {
               </div>
 
               <div>
-                <label for="email">Email address</label>
+                <label
+                  className="mb-3 block text-base font-medium"
+                  htmlFor="email"
+                >
+                  Email address
+                </label>
                 <input
+                  className="text-inherit w-full rounded-lg border-none bg-whites-100 p-3 text-lg shadow-black/10"
                   id="email"
                   type="email"
                   placeholder="me@example.com"
@@ -42,8 +58,18 @@ function CallToAction() {
               </div>
 
               <div>
-                <label for="select-where">Where did you hear from us?</label>
-                <select id="select-where" name="select-where" required>
+                <label
+                  className="mb-3 block text-base font-medium"
+                  htmlFor="select-where"
+                >
+                  Where did you hear from us?
+                </label>
+                <select
+                  id="select-where"
+                  name="select-where"
+                  className="text-inherit w-full rounded-lg border-none bg-whites-100 p-3 text-lg shadow-black/10"
+                  required
+                >
                   <option value="">Please choose one option:</option>
                   <option value="friends">Friends and family</option>
                   <option value="youtube">YouTube video</option>
