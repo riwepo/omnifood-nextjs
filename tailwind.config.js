@@ -26,6 +26,7 @@ module.exports = {
         300: "#888",
         400: "#ddd",
         500: "#6f6f6f",
+        600: "#eee",
       },
       tags: { vegetarian: "#51cf66", vegan: "#94d82d", paleo: "#ffd43b" },
     },
