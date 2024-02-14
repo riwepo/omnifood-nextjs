@@ -1,4 +1,5 @@
 import HeadingSecondary from "../ui/heading-secondary";
+import Button from "../ui/button";
 
 function CallToAction() {
   return (
@@ -79,7 +80,9 @@ function CallToAction() {
                 </select>
               </div>
 
-              <button className="btn btn--form">Sign up now</button>
+              <Button extraClasses="" href="#" full={true}>
+                Sign up now
+              </Button>
 
               {/* <input type="checkbox" />
               <input type="number" /> */}
