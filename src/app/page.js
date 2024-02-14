@@ -6,6 +6,7 @@ import Meals from "@/components/meals";
 import Testimonials from "@/components/testimonials";
 import Pricing from "@/components/pricing";
 import CallToAction from "@/components/call-to-action";
+import Footer from "@/components/footer/footer";
 
 function Home() {
   return (
@@ -13,13 +14,14 @@ function Home() {
       <Header />
       <main>
         <Hero />
-        <Featured />
+        {/* <Featured />
         <HowItWorks />
         <Meals />
         <Testimonials />
         <Pricing />
-        <CallToAction />
+        <CallToAction /> */}
       </main>
+      <Footer />
     </>
   );
 }
