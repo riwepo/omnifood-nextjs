@@ -13,13 +13,13 @@ function Home() {
     <>
       <Header />
       <main>
-        <Hero />
-        {/* <Featured />
+        {/* <Hero />
+        <Featured />
         <HowItWorks />
         <Meals />
         <Testimonials />
-        <Pricing />
-        <CallToAction /> */}
+        <Pricing /> */}
+        <CallToAction />
       </main>
       <Footer />
     </>
