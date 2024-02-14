@@ -11,7 +11,6 @@ export function Button1({ href, children, extraClasses }) {
     "bg-burnt-orange-100 text-white hover:bg-burnt-orange-200 active:bg-burnt-orange-200",
     extraClasses,
   );
-  console.log(classes);
   return (
     <Link href={href} className={classes}>
       {children}

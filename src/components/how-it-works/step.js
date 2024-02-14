@@ -25,8 +25,6 @@ function Step({ stepData }) {
   const textOrderStr = orders[textOrder];
   const picOrderStr = orders[picOrder];
 
-  console.log(textOrderStr, picOrderStr);
-
   return (
     <>
       <div className={textOrderStr}>
