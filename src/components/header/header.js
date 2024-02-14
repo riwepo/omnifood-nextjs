@@ -35,7 +35,7 @@ function Header() {
       <Link href="/">
         <Image
           alt="Omnifood logo"
-          src="/omnifood-logo.png"
+          src="/img/omnifood-logo.png"
           // image width to heigh is 7.5
           // we want height 2.2rem
           width={165}
