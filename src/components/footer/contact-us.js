@@ -22,6 +22,13 @@ function ContactUs() {
 
 export default ContactUs;
 
+// .footer-nav {
+//   list-style: none;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 2.4rem;
+// }
+
 // .footer-heading {
 //   font-size: 1.8rem;
 //   font-weight: 500;

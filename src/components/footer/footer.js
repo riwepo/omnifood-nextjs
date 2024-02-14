@@ -1,11 +1,40 @@
 import Image from "next/image";
+
 import SocialLinks from "./social-links";
 import ContactUs from "./contact-us";
+import FooterList from "./footer-list";
 
 function Footer() {
   const imgScale = 7.4;
   const imgHeight = 163 / imgScale;
   const imgWidth = 1212 / imgScale;
+
+  const accountData = {
+    heading: "Account",
+    items: [
+      { id: 1, text: "Create account" },
+      { id: 2, text: "Sign in" },
+      { id: 3, text: "iOS app" },
+      { id: 4, text: "Android app" },
+    ],
+  };
+  const companyData = {
+    heading: "Company",
+    items: [
+      { id: 1, text: "About Omnifood" },
+      { id: 2, text: "For Business" },
+      { id: 3, text: "Cooking partners" },
+      { id: 4, text: "Careers" },
+    ],
+  };
+  const resourcesData = {
+    heading: "Resources",
+    items: [
+      { id: 1, text: "Recipe directory" },
+      { id: 2, text: "Help center" },
+      { id: 3, text: "Privacy & terms" },
+    ],
+  };
 
   return (
     <footer className="footer border-greys-600 border-t-[px] px-0 py-32">
@@ -29,96 +58,9 @@ function Footer() {
 
         <ContactUs />
 
-        {/* <div className="address-col">
-          <p className="footer-heading">Contact us</p>
-          <address className="contacts">
-            <p className="address">
-              623 Harrison St., 2nd Floor, San Francisco, CA 94107
-            </p>
-            <p>
-              <a className="footer-link" href="tel:415-201-6370">
-                415-201-6370
-              </a>
-              <br />
-              <a className="footer-link" href="mailto:hello@omnifood.com">
-                hello@omnifood.com
-              </a>
-            </p>
-          </address>
-        </div> */}
-
-        <nav className="nav-col">
-          <p className="footer-heading">Account</p>
-          <ul className="footer-nav">
-            <li>
-              <a className="footer-link" href="#">
-                Create account
-              </a>
-            </li>
-            <li>
-              <a className="footer-link" href="#">
-                Sign in
-              </a>
-            </li>
-            <li>
-              <a className="footer-link" href="#">
-                iOS app
-              </a>
-            </li>
-            <li>
-              <a className="footer-link" href="#">
-                Android app
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <nav className="nav-col">
-          <p className="footer-heading">Company</p>
-          <ul className="footer-nav">
-            <li>
-              <a className="footer-link" href="#">
-                About Omnifood
-              </a>
-            </li>
-            <li>
-              <a className="footer-link" href="#">
-                For Business
-              </a>
-            </li>
-            <li>
-              <a className="footer-link" href="#">
-                Cooking partners
-              </a>
-            </li>
-            <li>
-              <a className="footer-link" href="#">
-                Careers
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <nav className="nav-col">
-          <p className="footer-heading">Resources</p>
-          <ul className="footer-nav">
-            <li>
-              <a className="footer-link" href="#">
-                Recipe directory{" "}
-              </a>
-            </li>
-            <li>
-              <a className="footer-link" href="#">
-                Help center
-              </a>
-            </li>
-            <li>
-              <a className="footer-link" href="#">
-                Privacy & terms
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <FooterList footerListData={accountData} />
+        <FooterList footerListData={companyData} />
+        <FooterList footerListData={resourcesData} />
       </div>
     </footer>
   );
