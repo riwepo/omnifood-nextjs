@@ -38,7 +38,7 @@ function Footer() {
 
   return (
     <footer className="footer border-t-[1px] border-greys-600 bg-white px-0 py-32">
-      <div className="grid--footer container mx-auto my-0 grid max-w-[7rem] grid-cols-[1.5fr_1.5fr_1fr_1fr_1fr] px-8 py-0">
+      <div className="grid--footer container mx-auto my-0 grid max-w-[75rem] grid-cols-[1.5fr_1.5fr_1fr_1fr_1fr] px-8 py-0">
         <div className="logo-col flex flex-col">
           <a href="#" className="footer-logo mb-8 block">
             <Image
