@@ -32,7 +32,7 @@ function CallToAction() {
                 </label>
 
                 <input
-                  className="text-inherit w-full rounded-lg border-none bg-whites-100 p-3 text-lg shadow-black/10"
+                  className="text-inherit w-full rounded-lg border-none bg-whites-100 p-3 text-lg focus:shadow-[0_0_0_0.5rem_rgba(253,242,233,0.5)] focus:outline-none"
                   id="full-name"
                   type="text"
                   placeholder="John Smith"
@@ -49,7 +49,7 @@ function CallToAction() {
                   Email address
                 </label>
                 <input
-                  className="text-inherit w-full rounded-lg border-none bg-whites-100 p-3 text-lg shadow-black/10"
+                  className="text-inherit w-full rounded-lg border-none bg-whites-100 p-3 text-lg shadow-black/10 focus:shadow-[0_0_0_0.5rem_rgba(253,242,233,0.5)] focus:outline-none"
                   id="email"
                   type="email"
                   placeholder="me@example.com"
@@ -68,7 +68,7 @@ function CallToAction() {
                 <select
                   id="select-where"
                   name="select-where"
-                  className="text-inherit w-full rounded-lg border-none bg-whites-100 p-3 text-lg shadow-black/10"
+                  className="text-inherit w-full rounded-lg border-none bg-whites-100 p-3 text-lg shadow-black/10 focus:shadow-[0_0_0_0.5rem_rgba(253,242,233,0.5)] focus:outline-none"
                   required
                 >
                   <option value="">Please choose one option:</option>
