@@ -5,7 +5,7 @@ function ContactUs() {
     <div className="address-col">
       <p className="footer-heading mb-10 text-lg font-medium">Contact us</p>
       <address className="contacts text-base leading-relaxed">
-        <p className="address mb-6">
+        <p className="address mb-6  text-greys-200">
           623 Harrison St., 2nd Floor, San Francisco, CA 94107
         </p>
         <p>
