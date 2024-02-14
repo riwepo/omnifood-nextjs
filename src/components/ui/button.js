@@ -6,13 +6,13 @@ function Button({ href, full, children, extraClasses }) {
   let classes;
   if (full) {
     classes = cn(
-      extraClasses,
       "inline-block rounded-lg bg-burnt-orange-100 px-8 py-4 text-xl font-semibold text-white transition-all duration-300 hover:bg-burnt-orange-200 active:bg-burnt-orange-200",
+      extraClasses,
     );
   } else {
     classes = cn(
-      extraClasses,
       "inline-block rounded-lg bg-white px-8 py-4 text-xl font-semibold text-greys-200 transition-all duration-300 hover:bg-whites-100 active:bg-whites-100 hover:shadow-inner active:shadow-inner",
+      extraClasses,
     );
   }
   return (
