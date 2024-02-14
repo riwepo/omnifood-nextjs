@@ -1,3 +1,5 @@
+import HeadingSecondary from "../ui/heading-secondary";
+
 function CallToAction() {
   return (
     <section
@@ -5,16 +7,18 @@ function CallToAction() {
       className="section-cta bg-white px-0 pb-32 pt-12"
     >
       <div className="container m-auto max-w-[75rem] px-8 py-0 text-center">
-        <div className="cta grid grid-cols-[2fr_1fr] rounded-xl bg-burnt-orange-100 shadow-xl shadow-black/25">
-          <div class="cta-text-box">
-            <h2 class="heading-secondary">Get your first meal for free!</h2>
-            <p class="cta-text">
+        <div className="cta from-burnt-orange-400 grid grid-cols-[2fr_1fr] rounded-xl bg-gradient-to-br to-burnt-orange-100 shadow-xl shadow-black/25">
+          <div className="cta-text-box text-burnt-orange-300 pb-16 pl-16 pr-16 pt-12">
+            <HeadingSecondary extraClasses="text-inherit mb-8">
+              Get your first meal for free!
+            </HeadingSecondary>
+            <p className="cta-text mb-16 text-xl leading-[1.8]">
               Healthy, tasty and hassle-free meals are waiting for you. Start
               eating well today. You can cancel or pause anytime. And the first
               meal is on us!
             </p>
-
-            <form class="cta-form" name="sign-up" netlify>
+            {/* <form className="cta-form" name="sign-up" netlify> */}
+            <form className="cta-form" name="sign-up">
               <div>
                 <label for="full-name">Full Name</label>
                 <input
@@ -49,14 +53,14 @@ function CallToAction() {
                 </select>
               </div>
 
-              <button class="btn btn--form">Sign up now</button>
+              <button className="btn btn--form">Sign up now</button>
 
               {/* <input type="checkbox" />
               <input type="number" /> */}
             </form>
           </div>
           <div
-            class="cta-img-box"
+            className="cta-img-box"
             role="img"
             aria-label="Woman enjoying food"
           ></div>
