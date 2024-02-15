@@ -16,7 +16,7 @@ function Nav() {
           return (
             <li key={link.id}>
               <Link
-                className="text-lg font-medium hover:text-burnt-orange-200 active:text-burnt-orange-200"
+                className="text-lg font-medium hover:text-burnt-orange-200 focus:shadow-[0_0_0_0.5rem_rgba(230,125,34,0.5)] focus:outline-none active:text-burnt-orange-200"
                 href={link.href}
               >
                 {link.name}
@@ -25,7 +25,10 @@ function Nav() {
           );
         })}
         <li>
-          <Button1 href="#pricing" extraClasses="px-4 py-2 text-lg">
+          <Button1
+            href="#call-to-action"
+            extraClasses="px-4 py-2 text-lg focus:shadow-[0_0_0_0.5rem_rgba(230,125,34,0.5)] focus:outline-none"
+          >
             Try for free
           </Button1>
         </li>
