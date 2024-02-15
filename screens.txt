@@ -167,6 +167,21 @@ gap
 
 gap-16 lg:gap-12 xl:24
 
+------------------------------
+
+testimonials container
+padding
+
+ sm 
+ md 
+ lg 9.6rem 3.2rem
+ xl 
+2xl 9.6rem
+
+p-y-24 p-x-8 xl:py-24 xl:px-24
+
+
+
 
 
 
