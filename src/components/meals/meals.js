@@ -1,35 +1,7 @@
-import Meal from "../meals/meal";
-import Diets from "../meals/diets";
 import HeadingSecondary from "../ui/heading-secondary";
 import Subheading from "../ui/subheading";
-
-const meal1 = {
-  index: 0,
-  imgSrc: "/img/meals/meal-1.jpg",
-  imgAlt: "Japanese Gyozas",
-  tags: [
-    { id: "vegetarian", heading: "Vegetarian", colour: "bg-tags-vegetarian" },
-  ],
-  heading: "Japanese Gyozas",
-  calories: 650,
-  nutriScore: 74,
-  rating: 4.9,
-  reviews: 537,
-};
-const meal2 = {
-  index: 1,
-  imgSrc: "/img/meals/meal-2.jpg",
-  imgAlt: "Avocado Salad",
-  tags: [
-    { id: "vegan", heading: "Vegan", colour: "bg-tags-vegan" },
-    { id: "paleo", heading: "Paleo", colour: "bg-tags-paleo" },
-  ],
-  heading: "Avocado Salad",
-  calories: 400,
-  nutriScore: 92,
-  rating: 4.8,
-  reviews: 441,
-};
+import AllRecipesLink from "./all-recipes-link";
+import MealList from "./meal-list";
 
 function Meals() {
   return (
@@ -41,20 +13,8 @@ function Meals() {
         </HeadingSecondary>
       </div>
 
-      <div className="m-auto mb-12 grid max-w-[75rem] grid-cols-3 items-center gap-x-20 px-8 py-0">
-        <Meal mealData={meal1} />
-        <Meal mealData={meal2} />
-        <Diets />
-      </div>
-
-      <div className="all-recipes container m-auto max-w-[75rem] px-8 py-0 text-center text-lg ">
-        <a
-          href="#"
-          className="link inline-block border-b-[1px] border-current pb-[2px] text-burnt-orange-100 transition-all duration-300 hover:border-none hover:text-burnt-orange-200"
-        >
-          See all recipes &rarr;
-        </a>
-      </div>
+      <MealList />
+      <AllRecipesLink />
     </section>
   );
 }
