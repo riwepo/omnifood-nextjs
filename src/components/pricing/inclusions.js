@@ -36,7 +36,7 @@ function Inclusions() {
     },
   ];
   return (
-    <div className="container mx-auto my-0 mb-12 grid max-w-[75rem] grid-cols-4 gap-x-16">
+    <div className="_grid container mx-auto my-0 mb-12 grid max-w-[75rem] grid-cols-4 gap-x-16 gap-y-12 md:gap-y-16">
       {features.map((feature) => {
         return <Feature key={feature.index} featureData={feature} />;
       })}

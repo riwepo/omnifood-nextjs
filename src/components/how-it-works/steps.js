@@ -35,7 +35,7 @@ const stepData = [
 
 function Steps() {
   return (
-    <div className="m-auto grid max-w-[75rem] grid-cols-2 items-center gap-y-[6rem] px-8 py-0">
+    <div className="_grid m-auto grid max-w-[75rem] grid-cols-2 items-center gap-y-12 px-8 py-0 md:gap-y-16">
       {stepData.map((step) => {
         return <Step key={step.index} stepData={step} />;
       })}

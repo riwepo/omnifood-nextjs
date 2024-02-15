@@ -33,7 +33,7 @@ const mealData = [
 
 function MealList() {
   return (
-    <div className="m-auto mb-12 grid max-w-[75rem] grid-cols-3 items-center gap-x-20 px-8 py-0">
+    <div className="_grid m-auto mb-12 grid max-w-[75rem] grid-cols-3 items-center gap-x-20 gap-y-12 px-8 py-0 md:gap-y-16">
       {mealData.map((meal) => {
         return <Meal key={meal.index} mealData={meal} />;
       })}

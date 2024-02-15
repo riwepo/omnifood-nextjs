@@ -21,32 +21,4 @@ function Pricing() {
   );
 }
 
-// .container {
-//   /* 1140px */
-//   max-width: 120rem;
-//   padding: 0 3.2rem;
-//   margin: 0 auto;
-// }
-
-// .all-recipes {
-//   text-align: center;
-//   font-size: 1.8rem;
-// }
-
-// .link:link,
-// .link:visited {
-//   display: inline-block;
-//   color: #e67e22;
-//   text-decoration: none;
-//   border-bottom: 1px solid currentColor;
-//   padding-bottom: 2px;
-//   transition: all 0.3s;
-// }
-
-// .link:hover,
-// .link:active {
-//   color: #cf711f;
-//   border-bottom: 1px solid transparent;
-// }
-
 export default Pricing;

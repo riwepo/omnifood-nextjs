@@ -49,39 +49,11 @@ function Plans() {
   };
 
   return (
-    <div className="container mx-auto my-0 mb-12 grid max-w-[75rem] grid-cols-2 gap-x-16 gap-y-24 px-8 py-0">
+    <div className="_grid container mx-auto my-0 mb-12 grid max-w-[75rem] grid-cols-2 gap-x-16 gap-y-12 px-8 py-0 md:gap-y-16">
       <Plan planData={plan1Data} />
       <Plan planData={plan2Data} />
     </div>
   );
 }
-
-// .container {
-//   /* 1140px */
-//   max-width: 120rem;
-//   padding: 0 3.2rem;
-//   margin: 0 auto;
-// }
-
-// .all-recipes {
-//   text-align: center;
-//   font-size: 1.8rem;
-// }
-
-// .link:link,
-// .link:visited {
-//   display: inline-block;
-//   color: #e67e22;
-//   text-decoration: none;
-//   border-bottom: 1px solid currentColor;
-//   padding-bottom: 2px;
-//   transition: all 0.3s;
-// }
-
-// .link:hover,
-// .link:active {
-//   color: #cf711f;
-//   border-bottom: 1px solid transparent;
-// }
 
 export default Plans;
