@@ -33,6 +33,6 @@ md
 lg 4.8rem
 xl 9.6rem
 
-gap-x-[3rem] xl:gap-x-[6rem]
+gap-x-12 xl:gap-x-24
 
 
