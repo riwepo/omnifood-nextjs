@@ -102,6 +102,22 @@ font size
 
 text-[2.25rem] xl:text-[2.75rem]
 
+------------------------------
+
+heading secondary
+margin bottom
+
+ sm 
+ md 4.8rem
+ lg 
+ xl 
+2xl 9.6rem
+
+mb-12 lg:mb-24
+
+
+
+
 
 
 
