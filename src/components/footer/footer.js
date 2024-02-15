@@ -32,7 +32,7 @@ function Footer() {
 
   return (
     <footer className="footer border-t-[1px] border-greys-600 bg-white px-0 py-32">
-      <div className="_grid grid--footer container mx-auto my-0 grid max-w-[75rem] grid-cols-[1.5fr_1.5fr_1fr_1fr_1fr] gap-y-12 px-8 py-0 md:gap-y-16">
+      <div className="_grid grid--footer container mx-auto my-0 grid max-w-[75rem] grid-cols-[1.5fr_1.5fr_1fr_1fr_1fr] gap-x-12 gap-y-12 px-8 py-0 md:gap-y-16 xl:gap-x-24">
         <LogoCol />
 
         <ContactUsCol />

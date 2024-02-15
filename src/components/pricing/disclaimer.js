@@ -1,6 +1,6 @@
 function Disclaimer() {
   return (
-    <div className="_grid container mx-auto my-0 grid max-w-[75rem] gap-y-12 px-8 py-0 md:gap-y-16">
+    <div className="_grid container mx-auto my-0 grid max-w-[75rem] gap-x-12 gap-y-12 px-8 py-0 md:gap-y-16 xl:gap-x-24">
       <aside className="plan-details mb-24 text-center text-base leading-normal">
         Prices include all applicable taxes. You can cancel at any time. Both
         plans include the following:
