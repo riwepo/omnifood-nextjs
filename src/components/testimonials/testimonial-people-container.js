@@ -1,20 +1,18 @@
-import Gallery from "./gallery";
-import TestimonialPeopleContainer from "./testimonial-people-container";
+import HeadingSecondary from "../ui/heading-secondary";
+import Subheading from "../ui/subheading";
+import TestimonialPeople from "./testimonial-people";
 
-function Testimonials() {
+function TestimonialPeopleContainer() {
   return (
-    <section
-      id="testimonials"
-      className="section-testimonials grid grid-cols-[55fr_45fr] items-center bg-whites-100 px-0 py-24"
-    >
-      <TestimonialPeopleContainer />
-
-      <Gallery />
-    </section>
+    <div className="testimonials-container p-24">
+      <Subheading>Testimonials</Subheading>
+      <HeadingSecondary>Once you try it, you can't go back</HeadingSecondary>
+      <TestimonialPeople />
+    </div>
   );
 }
 
-export default Testimonials;
+export default TestimonialPeopleContainer;
 
 // .section-testimonials {
 //   background-color: #fdf2e9;
