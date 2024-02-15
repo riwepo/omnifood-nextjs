@@ -25,7 +25,7 @@ function ScrollNotifier() {
   return (
     <div
       ref={ref}
-      className="absolute left-0 top-0 h-full w-full bg-white/0"
+      className="absolute left-0 top-0 -z-10 h-full w-full bg-white/0"
     ></div>
   );
 }
