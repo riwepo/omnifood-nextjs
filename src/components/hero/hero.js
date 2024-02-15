@@ -1,10 +1,11 @@
 import { Button1, Button2 } from "../ui/buttons";
 import DeliveredImages from "./delivered-images";
 import HeadingPrimary from "../ui/heading-primary";
+import ScrollNotifier from "./scroll-notifier";
 
 function Hero() {
   return (
-    <section className="bg-whites-100 pb-6 pl-0 pr-0 pt-12">
+    <section className="relative bg-whites-100 pb-6 pl-0 pr-0 pt-12">
       <div className="mx-auto mb-8 grid max-w-[80rem] grid-cols-2 items-center gap-24 px-2">
         <div className="hero-text-box col-auto">
           <HeadingPrimary>
@@ -42,6 +43,7 @@ function Hero() {
           </picture>
         </div>
       </div>
+      <ScrollNotifier />
     </section>
   );
 }
