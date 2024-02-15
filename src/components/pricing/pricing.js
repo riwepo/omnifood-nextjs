@@ -2,6 +2,7 @@ import HeadingSecondary from "../ui/heading-secondary";
 import Subheading from "../ui/subheading";
 import Plans from "../pricing/plans";
 import Inclusions from "./inclusions";
+import Disclaimer from "./disclaimer";
 
 function Pricing() {
   return (
@@ -13,12 +14,8 @@ function Pricing() {
         </HeadingSecondary>
       </div>
       <Plans />
-      <div className="container mx-auto my-0 grid max-w-[75rem] px-8 py-0">
-        <aside className="plan-details mb-24 text-center text-base leading-normal">
-          Prices include all applicable taxes. You can cancel at any time. Both
-          plans include the following:
-        </aside>
-      </div>
+      <Disclaimer />
+
       <Inclusions />
     </section>
   );
