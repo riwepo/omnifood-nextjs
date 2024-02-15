@@ -1,6 +1,6 @@
 import FooterLink from "./footer-link";
 
-function ContactUs() {
+function ContactUsCol() {
   return (
     <div className="address-col">
       <p className="footer-heading mb-10 text-lg font-medium">Contact us</p>
@@ -20,27 +20,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
-
-// .footer-nav {
-//   list-style: none;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 2.4rem;
-// }
-
-// .footer-heading {
-//   font-size: 1.8rem;
-//   font-weight: 500;
-//   margin-bottom: 4rem;
-// }
-
-// .contacts {
-//   font-style: normal;
-//   font-size: 1.6rem;
-//   line-height: 1.6;
-// }
-
-// .address {
-//   margin-bottom: 2.4rem;
-// }
+export default ContactUsCol;
