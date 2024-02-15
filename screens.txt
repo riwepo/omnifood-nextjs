@@ -180,6 +180,19 @@ padding
 
 p-y-24 p-x-8 xl:py-24 xl:px-24
 
+------------------------------
+
+hero
+columns
+
+ sm 
+ md 1
+ lg 
+ xl 
+2xl 2
+
+grid-cols-1 lg:grid-cols-2
+
 
 
 
