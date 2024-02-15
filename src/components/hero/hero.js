@@ -16,7 +16,7 @@ function Hero() {
             healthy again. Tailored to your personal tastes and nutritional
             needs.
           </p>
-          <Button1 href="#cta" extraClasses="mr-4">
+          <Button1 href="#call-to-action" extraClasses="mr-4">
             Start eating well
           </Button1>
           <Button2 href="#how">Learn more &darr;</Button2>
