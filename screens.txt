@@ -154,15 +154,25 @@ gap
 
 gap-8 xl:gap-12
 
+------------------------------
+
+hero
+gap
+
+ sm 
+ md 6.4rem
+ lg 4.8rem
+ xl 
+2xl 9.6rem
+
+gap-16 lg:gap-12 xl:24
 
 
 
 
 
 
-.main-nav-list {
-    gap: 3.2rem;
-  }
+
 
 
 
