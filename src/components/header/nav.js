@@ -11,7 +11,7 @@ function Nav() {
   ];
   return (
     <nav>
-      <ul className="flex list-none items-center gap-12">
+      <ul className="flex list-none items-center gap-8 xl:gap-12">
         {navLinkData.map((link) => {
           return (
             <li key={link.id}>
