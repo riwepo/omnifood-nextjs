@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import Nav from "./nav";
 import { cn } from "../../lib/utils";
@@ -22,6 +22,8 @@ function Header() {
   useScrollListener((inView) => {
     setHeroInView(inView);
   });
+
+  // update in sync with the render cycle
   useEffect(() => {
     if (heroInView) {
       setStickyClass("relative bg-whites-100");
