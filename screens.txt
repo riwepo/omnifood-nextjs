@@ -89,6 +89,22 @@ font size
 note factor up by 62.5%
 text-[0.8rem] lg:text-[0.9rem] 2xl:text-[1rem]
 
+------------------------------
+
+heading secondary
+font size
+
+ sm 
+ md 
+ lg 3.6rem
+ xl 
+2xl 4.4rem
+
+text-[2.25rem] xl:text-[2.75rem]
+
+
+
+
 
 
 
