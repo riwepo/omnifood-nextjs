@@ -1,6 +1,6 @@
 function HeadingPrimary({ children }) {
   return (
-    <h1 className="mb-8 text-5xl font-bold tracking-[-0.5px] text-greys-100">
+    <h1 className="mb-8 text-[2.75rem] font-bold tracking-[-0.5px] text-greys-100 2xl:text-[3.25rem]">
       {children}
     </h1>
   );

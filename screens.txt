@@ -39,7 +39,8 @@ gap-x-12 xl:gap-x-24
 
 ------------------------------
 
-hero max width
+hero
+max width
 
  sm 
  md 
@@ -48,6 +49,21 @@ hero max width
 2xl 130rem
 
 max-w-[75rem] 2xl:max-w-[80rem]
+
+------------------------------
+
+heading primary
+font size
+
+ sm 
+ md 
+ lg 
+ xl 4.4rem
+2xl 5.2rem
+
+text-[2.75rem] 2xl:text-[3.25rem]
+
+
 
 
 
