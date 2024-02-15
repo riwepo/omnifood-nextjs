@@ -2,6 +2,7 @@
 
 import { useInView } from "react-intersection-observer";
 import { emitScroll } from "../../lib/events";
+import { useEffect } from "react";
 
 // this is a transparent div
 // it sits on top of the hero
@@ -11,11 +12,16 @@ function ScrollNotifier() {
     /* Optional options */
     threshold: 0,
   });
-  if (inView) {
-    emitScroll(true);
-  } else {
-    emitScroll(false);
-  }
+
+  // emit events in sync wht the render cycle
+  useEffect(() => {
+    if (inView) {
+      emitScroll(true);
+    } else {
+      emitScroll(false);
+    }
+  }, [inView]);
+
   return (
     <div
       ref={ref}
