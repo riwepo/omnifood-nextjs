@@ -128,6 +128,22 @@ font size
 
 text-[1.5rem] xl:text-[1.88rem]
 
+------------------------------
+
+header 
+padding
+
+ sm 
+ md 
+ lg 0 3.2rem
+ xl 
+2xl 0 4.8rem;
+
+px-8 xl:px-12
+
+
+
+
 
 
 

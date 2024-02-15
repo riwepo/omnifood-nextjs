@@ -36,7 +36,7 @@ function Header() {
   const imgWidth = 1212 * imgScale;
   const imgHeight = 163 * imgScale;
   const headerClass = cn(
-    "z-10 flex h-24 items-center justify-between px-10 py-0",
+    "z-10 flex h-24 items-center justify-between px-8 xl:px-12 py-0",
     stickyClass,
   );
   return (
