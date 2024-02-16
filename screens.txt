@@ -340,7 +340,7 @@ p-8 md:pt-12 md:pr-16 md:pb-16 md:pl-16
 
 ------------------------------
 
-call to image box
+call to action image box
 grid row
 
  sm 1
@@ -349,16 +349,35 @@ grid row
  xl 
 2xl 
 
+------------------------------
+
+call to action image box
+height
+
+ sm 32rem
+ md auto
+ lg 
+ xl 
+2xl 
+
+------------------------------
+
+call to action form
+columns
+
+ sm 32rem
+ md auto
+ lg 
+ xl 
+2xl 
+
+grid-cols-1 lg:grid-cols-2
 
 
 
 
 
 
-.cta-img-box {
-    height: 32rem;
-    grid-row: 1;
-  }
 
 
 
