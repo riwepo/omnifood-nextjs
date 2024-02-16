@@ -24,25 +24,6 @@ function Plan({ planData }) {
     after:content-["Best_Value"]`;
   }
 
-  //   background-color: #fdf2e9;
-  //   padding: 4.8rem;
-  //   position: relative;
-  //   overflow: hidden;
-  // }
-
-  // .pricing-plan--complete::after {
-  //   content: "Best value";
-  //   position: absolute;
-  //   top: 6%;
-  //   right: -18%;
-  //   text-transform: uppercase;
-  //   font-size: 1.4rem;
-  //   font-weight: 700;
-  //   color: #333;
-  //   background-color: #ffd43b;
-  //   padding: 0.8rem 8rem;
-  //   transform: rotate(45deg);
-
   return (
     <div
       className={`
