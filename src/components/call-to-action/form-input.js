@@ -1,7 +1,10 @@
 function FormInput({ id, label, type, placeholder }) {
   return (
     <div>
-      <label className="mb-3 block text-base font-medium" htmlFor={id}>
+      <label
+        className="mb-3 block text-left text-base font-medium"
+        htmlFor={id}
+      >
         {label}
       </label>
 
