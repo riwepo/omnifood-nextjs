@@ -7,6 +7,7 @@ import { useState, useEffect, useRef } from "react";
 import Nav from "./nav";
 import { cn } from "@/lib/utils";
 import { useScrollListener } from "@/lib/events";
+import omnifoodLogo from "@/public/img/omnifood-logo.png";
 
 function Header() {
   // the hero class is at the top of the page
@@ -32,9 +33,6 @@ function Header() {
     }
   }, [heroInView]);
 
-  const imgScale = 0.135;
-  const imgWidth = 1212 * imgScale;
-  const imgHeight = 163 * imgScale;
   const headerClass = cn(
     "z-10 flex h-24 items-center justify-between px-8 xl:px-12 py-0",
     stickyClass,
@@ -44,9 +42,8 @@ function Header() {
       <Link href="/">
         <Image
           alt="Omnifood logo"
-          src="/img/omnifood-logo.png"
-          width={imgWidth}
-          height={imgHeight}
+          src={omnifoodLogo}
+          className="h-[1.375rem] w-full"
         />
       </Link>
       <Nav />
