@@ -1,21 +1,17 @@
 import Image from "next/image";
 
+import omnifoodLogo from "@/public/img/omnifood-logo.png";
+
 import SocialLinks from "./social-links";
 
 function LogoCol() {
-  const imgScale = 7.4;
-  const imgHeight = 163 / imgScale;
-  const imgWidth = 1212 / imgScale;
-
   return (
     <div className="logo-col flex flex-col">
       <a href="#" className="footer-logo mb-8 block">
         <Image
-          className="logo"
-          height={imgHeight}
-          width={imgWidth}
           alt="Omnifood logo"
-          src="/img/omnifood-logo.png"
+          src={omnifoodLogo}
+          className="logo h-[1.375rem] w-full"
         />
       </a>
       <SocialLinks />
