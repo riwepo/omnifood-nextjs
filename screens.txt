@@ -206,6 +206,25 @@ padding
 
 py-0 px-8 md:px-16 lg:px-8
 
+------------------------------
+
+hero text box, img box
+text align
+
+ sm 
+ md center
+ lg 
+ xl 
+2xl 
+
+text-center lg:text-left
+
+
+
+
+
+
+
 
 
 

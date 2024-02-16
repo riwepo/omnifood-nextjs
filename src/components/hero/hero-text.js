@@ -4,7 +4,7 @@ import HeadingPrimary from "../ui/heading-primary";
 
 function HeroText() {
   return (
-    <div className="hero-text-box col-auto">
+    <div className="hero-text-box col-auto text-center lg:text-left">
       <HeadingPrimary>
         A healthy meal delivered to your door, every single day
       </HeadingPrimary>

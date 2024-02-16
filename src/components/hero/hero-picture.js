@@ -1,6 +1,6 @@
 function HeroPicture() {
   return (
-    <div className="col-auto text-center">
+    <div className="col-auto text-center lg:text-left">
       <picture>
         <source srcSet="img/hero.webp" type="image/webp" />
         <source srcSet="img/hero-min.png" type="image/png" />
