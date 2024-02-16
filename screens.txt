@@ -300,7 +300,8 @@ lg:pt-8 lg:pr-12 lg:pb-12 lg:pl-12
 
 ------------------------------
 
-testimonaials section columns
+testimonaials section
+columns
 
  sm 
  md 1
@@ -310,11 +311,20 @@ testimonaials section columns
 
 grid-cols-1 lg:grid-cols-[55fr 45fr]
 
+------------------------------
+
+call to action
+columns
+
+ sm 1
+ md 3fr 2fr
+ lg 
+ xl 
+2xl 2fr 1fr
+
+grid-cols-1 md:grid-cols-[3fr_2fr] lg:grid-cols-[2fr_1fr]
 
 
-.section-testimonials {
-    grid-template-columns: 1fr;
-  }
 
 
 
