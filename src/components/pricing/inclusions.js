@@ -1,8 +1,8 @@
 import Feature from "./feature";
-import InfiniteIcon from "../../../public/icons/features/infinite-outline.svg";
-import NutritionIcon from "../../../public/icons/features/nutrition-outline.svg";
-import LeafIcon from "../../../public/icons/features/leaf-outline.svg";
-import PauseIcon from "../../../public/icons/features/pause-circle-outline.svg";
+import InfiniteIcon from "@/public/icons/features/infinite-outline.svg";
+import NutritionIcon from "@/public/icons/features/nutrition-outline.svg";
+import LeafIcon from "@/public/icons/features/leaf-outline.svg";
+import PauseIcon from "@/public/icons/features/pause-circle-outline.svg";
 
 function Inclusions() {
   const features = [

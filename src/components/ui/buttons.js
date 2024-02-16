@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { cn } from "../../lib/utils";
+import { cn } from "@/lib/utils";
 
 const commonClasses =
   "inline-block rounded-lg px-8 py-4 text-xl font-semibold transition-all duration-300";

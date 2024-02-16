@@ -1,14 +1,14 @@
 import Image from "next/image";
-import FlameIcon from "../../../public/icons/meals/flame-outline.svg";
-import StarIcon from "../../../public/icons/meals/star-outline.svg";
-import RestaurantIcon from "../../../public/icons/meals/restaurant-outline.svg";
+import FlameIcon from "@/public/icons/meals/flame-outline.svg";
+import StarIcon from "@/public/icons/meals/star-outline.svg";
+import RestaurantIcon from "@/public/icons/meals/restaurant-outline.svg";
 
 function Meal({ mealData }) {
   const imgWidth = 700;
   const imgHeight = 467;
 
   return (
-    <div className="meal shadow-black/10 overflow-hidden rounded-xl bg-white shadow-xl transition-all duration-700 hover:-translate-y-3">
+    <div className="meal overflow-hidden rounded-xl bg-white shadow-xl shadow-black/10 transition-all duration-700 hover:-translate-y-3">
       <Image
         src={mealData.imgSrc}
         alt={mealData.imgAlt}

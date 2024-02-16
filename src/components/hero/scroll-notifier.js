@@ -1,7 +1,7 @@
 "use client";
 
 import { useInView } from "react-intersection-observer";
-import { emitScroll } from "../../lib/events";
+import { emitScroll } from "@/lib/events";
 import { useEffect } from "react";
 
 // this is a transparent div

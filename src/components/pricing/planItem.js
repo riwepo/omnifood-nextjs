@@ -1,5 +1,5 @@
-import CheckmarkIcon from "../../../public/icons/checkmark-outline.svg";
-import CloseIcon from "../../../public/icons/close-outline.svg";
+import CheckmarkIcon from "@/public/icons/checkmark-outline.svg";
+import CloseIcon from "@/public/icons/close-outline.svg";
 
 function PlanItem({ isChecked, markup }) {
   return (

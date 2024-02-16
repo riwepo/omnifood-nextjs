@@ -1,6 +1,6 @@
-import InstagramLogo from "../../../public/icons/social/logo-instagram.svg";
-import FacebookLogo from "../../../public/icons/social/logo-facebook.svg";
-import TwitterLogo from "../../../public/icons/social/logo-twitter.svg";
+import InstagramLogo from "@/public/icons/social/logo-instagram.svg";
+import FacebookLogo from "@/public/icons/social/logo-facebook.svg";
+import TwitterLogo from "@/public/icons/social/logo-twitter.svg";
 
 function SocialLinks() {
   return (
@@ -8,7 +8,7 @@ function SocialLinks() {
       <li>
         <a className="footer-link" href="#">
           <InstagramLogo
-            className="social-icon text-greys-700 h-8 w-8 text-base transition-all duration-300 hover:text-greys-200 active:text-greys-200"
+            className="social-icon h-8 w-8 text-base text-greys-700 transition-all duration-300 hover:text-greys-200 active:text-greys-200"
             name="logo-instagram"
           />
         </a>
@@ -16,7 +16,7 @@ function SocialLinks() {
       <li>
         <a className="footer-link" href="#">
           <FacebookLogo
-            className="social-icon text-greys-700 h-8 w-8 text-base transition-all duration-300 hover:text-greys-200 active:text-greys-200"
+            className="social-icon h-8 w-8 text-base text-greys-700 transition-all duration-300 hover:text-greys-200 active:text-greys-200"
             name="logo-facebook"
           />
         </a>
@@ -24,7 +24,7 @@ function SocialLinks() {
       <li>
         <a className="footer-link" href="#">
           <TwitterLogo
-            className="social-icon text-greys-700 h-8 w-8 text-base transition-all duration-300 hover:text-greys-200 active:text-greys-200"
+            className="social-icon h-8 w-8 text-base text-greys-700 transition-all duration-300 hover:text-greys-200 active:text-greys-200"
             name="logo-twitter"
           />
         </a>

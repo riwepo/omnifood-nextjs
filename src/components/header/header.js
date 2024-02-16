@@ -5,8 +5,8 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 
 import Nav from "./nav";
-import { cn } from "../../lib/utils";
-import { useScrollListener } from "../../lib/events";
+import { cn } from "@/lib/utils";
+import { useScrollListener } from "@/lib/events";
 
 function Header() {
   // the hero class is at the top of the page
