@@ -46,6 +46,7 @@ function Header() {
           className="h-[1.375rem] w-full"
         />
       </Link>
+      <p className="before:content-['phone'] md:before:content-['tablet'] lg:before:content-['landscape_tablet'] xl:before:content-['desktop'] 2xl:before:content-['big_desktop']"></p>
       <Nav />
     </header>
   );
