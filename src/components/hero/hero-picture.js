@@ -1,15 +1,14 @@
 import Image from "next/image";
 
+import heroImage from "@/public/img/hero.webp";
+
 function HeroPicture() {
-  const imgWidth = 1200;
-  const imgHeight = 1184;
   return (
     <div className="col-auto text-center lg:text-left">
       <Image
-        src="/img/hero.webp"
+        src={heroImage}
         alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-        width={imgWidth}
-        height={imgHeight}
+        className="w-[80%] md:w-[60%] lg:w-[100%]"
       />
     </div>
   );
