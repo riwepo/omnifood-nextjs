@@ -193,6 +193,20 @@ columns
 
 grid-cols-1 lg:grid-cols-2
 
+------------------------------
+
+hero
+padding
+
+ sm 0 3.2rem
+ md 0 6.4rem
+ lg 
+ xl 
+2xl 0 3.2rem
+
+py-0 px-8 md:px-16 lg:px-8
+
+
 
 
 
