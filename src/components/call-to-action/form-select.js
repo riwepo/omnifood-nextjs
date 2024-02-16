@@ -1,7 +1,10 @@
 function FormSelect({ id, label, options }) {
   return (
     <div>
-      <label className="mb-3 block text-base font-medium" htmlFor={id}>
+      <label
+        className="mb-3 block text-left text-base font-medium"
+        htmlFor={id}
+      >
         {label}
       </label>
       <select
