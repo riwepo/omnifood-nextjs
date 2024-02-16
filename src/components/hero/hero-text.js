@@ -17,7 +17,7 @@ function HeroText() {
       </Button1>
       <Button2 href="#how">Learn more &darr;</Button2>
 
-      <div className="mt-20 flex items-center justify-center gap-4 lg:justify-start ">
+      <div className="mt-8 flex items-center justify-center gap-4 lg:mt-20 lg:justify-start">
         <DeliveredImages />
         <p className="text-lg font-semibold">
           <span className="font-bold text-burnt-orange-200">250,000+</span>{" "}

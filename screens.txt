@@ -247,6 +247,19 @@ justify content
 
 justify-center lg:justify-start 
 
+------------------------------
+
+delivered meals 
+margin top
+
+ sm 
+ md 3.2rem
+ lg 
+ xl 
+2xl 8rem
+
+mt-8 lg:mt-20
+
 
 
 
