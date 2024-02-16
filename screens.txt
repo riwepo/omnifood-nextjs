@@ -232,22 +232,22 @@ width
 
 w-[80%] md:w-[60%] lg:w-[100%]
 
-not required as pas as I can tell
+not required as far as I can tell
 
 ------------------------------
 
-hero image
-width
+delivered meals 
+justify content
 
- sm 80%
- md 60%
+ sm 
+ md center
  lg 
  xl 
-2xl 100%
+2xl start
 
-w-[80%] md:w-[60%] lg:w-[100%]
+justify-center lg:justify-start 
 
-not required as pas as I can tell
+
 
 
 
