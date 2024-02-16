@@ -3,14 +3,14 @@ import Image from "next/image";
 import HeadingTertiary from "../ui/heading-tertiary";
 
 function Step({ stepData }) {
-  const imgWidth = 400 * 0.35;
-  const imgHeight = 809 * 0.35;
   let textOrder, picOrder;
-  if (stepData.index % 2 === 0) {
-    textOrder = stepData.index * 2;
+  // note key starts at 1
+  const index = stepData.key - 1;
+  if (index % 2 === 0) {
+    textOrder = index * 2;
     picOrder = textOrder + 1;
   } else {
-    picOrder = stepData.index * 2;
+    picOrder = index * 2;
     textOrder = picOrder + 1;
   }
   // note tailwind needs complete unbroken class names in the source file
@@ -68,12 +68,7 @@ function Step({ stepData }) {
          after:pb-[45%]       
         `}
       >
-        <Image
-          src={stepData.imgSrc}
-          width={imgWidth}
-          height={imgHeight}
-          alt={stepData.imgAlt}
-        />
+        <Image src={stepData.img} className="w-[35%]" alt={stepData.imgAlt} />
       </div>
     </>
   );
