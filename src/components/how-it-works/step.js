@@ -28,7 +28,7 @@ function Step({ stepData }) {
   return (
     <>
       <div className={textOrderStr}>
-        <p className="mb-4 text-[5.4rem] font-semibold text-greys-400">
+        <p className="mb-4 text-[4.63rem] font-semibold text-greys-400 lg:text-[5.37rem]">
           {stepData.number}
         </p>
         <HeadingTertiary>{stepData.summary}</HeadingTertiary>

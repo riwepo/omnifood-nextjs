@@ -271,6 +271,25 @@ height
 
 h-[0.75rem] md:h-[1.5rem] lg:h-[2rem]
 
+------------------------------
+
+step number
+font size
+
+ sm 
+ md 7.4rem
+ lg 
+ xl 
+2xl 8.6rem
+
+text-[4.63rem] lg:text-[5.37rem]
+
+
+
+.step-number {
+    font-size: 7.4rem;
+  }
+
 
 
 
