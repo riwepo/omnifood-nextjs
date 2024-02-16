@@ -1,6 +1,5 @@
-import HeadingSecondary from "../ui/heading-secondary";
-import Form from "./form";
 import Picture from "./picture";
+import TextBox from "./text-box";
 
 function CallToAction() {
   return (
@@ -10,23 +9,10 @@ function CallToAction() {
     >
       <div className="container m-auto max-w-[75rem] px-8 py-0 text-center">
         <div
-          className="cta grid grid-cols-1 overflow-hidden rounded-xl
- bg-gradient-to-br from-burnt-orange-400 to-burnt-orange-100 shadow-xl shadow-black/25 md:grid-cols-[3fr_2fr] lg:grid-cols-[2fr_1fr]"
+          className="cta grid grid-cols-1 grid-rows-2 overflow-hidden rounded-xl
+ bg-gradient-to-br from-burnt-orange-400 to-burnt-orange-100 shadow-xl shadow-black/25 md:grid-cols-[3fr_2fr] md:grid-rows-1 lg:grid-cols-[2fr_1fr]"
         >
-          <div
-            className="cta-text-box p-8 text-burnt-orange-300 md:pb-16 md:pl-16 md:pr-16
- md:pt-12"
-          >
-            <HeadingSecondary extraClasses="text-inherit mb-8">
-              Get your first meal for free!
-            </HeadingSecondary>
-            <p className="cta-text mb-16 text-xl leading-[1.8]">
-              Healthy, tasty and hassle-free meals are waiting for you. Start
-              eating well today. You can cancel or pause anytime. And the first
-              meal is on us!
-            </p>
-            <Form />
-          </div>
+          <TextBox />
           <Picture />
         </div>
       </div>
