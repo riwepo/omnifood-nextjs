@@ -219,6 +219,37 @@ text align
 
 text-center lg:text-left
 
+------------------------------
+
+hero image
+width
+
+ sm 80%
+ md 60%
+ lg 
+ xl 
+2xl 100%
+
+w-[80%] md:w-[60%] lg:w-[100%]
+
+not required as pas as I can tell
+
+------------------------------
+
+hero image
+width
+
+ sm 80%
+ md 60%
+ lg 
+ xl 
+2xl 100%
+
+w-[80%] md:w-[60%] lg:w-[100%]
+
+not required as pas as I can tell
+
+
 
 
 
