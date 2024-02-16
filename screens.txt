@@ -284,12 +284,24 @@ font size
 
 text-[4.63rem] lg:text-[5.37rem]
 
+------------------------------
+
+meal content 
+padding
+
+ sm 
+ md 2.4rem 3.2rem 3.2rem 3.2rem
+ lg 
+ xl 
+2xl 3.2rem 4.8rem 4.8rem 4.8rem
+
+pt-3 pr-6 pb-8 pl-8
+lg:pt-8 lg:pr-12 lg:pb-12 lg:pl-12
 
 
-.step-number {
-    font-size: 7.4rem;
+.meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
   }
-
 
 
 

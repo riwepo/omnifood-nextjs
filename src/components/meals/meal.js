@@ -8,7 +8,7 @@ function Meal({ mealData }) {
     <div className="meal overflow-hidden rounded-xl bg-white shadow-xl shadow-black/10 transition-all duration-700 hover:-translate-y-3">
       <Image src={mealData.img} alt={mealData.imgAlt} />
 
-      <div className="meal-content pb-12 pl-12 pr-12 pt-8">
+      <div className="meal-content pb-8 pl-8 pr-6 pt-3 lg:pb-12 lg:pl-12 lg:pr-12 lg:pt-8">
         <div className="meal-tags mb-3 flex gap-3">
           {mealData.tags.map((tag) => {
             return (
