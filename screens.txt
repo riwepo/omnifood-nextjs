@@ -298,9 +298,22 @@ padding
 pt-3 pr-6 pb-8 pl-8
 lg:pt-8 lg:pr-12 lg:pb-12 lg:pl-12
 
+------------------------------
 
-.meal-content {
-    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+testimonaials section columns
+
+ sm 
+ md 1
+ lg 
+ xl 
+2xl 55fr 45fr
+
+grid-cols-1 lg:grid-cols-[55fr 45fr]
+
+
+
+.section-testimonials {
+    grid-template-columns: 1fr;
   }
 
 

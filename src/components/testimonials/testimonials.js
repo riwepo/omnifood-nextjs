@@ -5,7 +5,7 @@ function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="section-testimonials grid grid-cols-[55fr_45fr] items-center bg-whites-100 px-0 py-24"
+      className="section-testimonials grid grid-cols-1 items-center bg-whites-100 px-0 py-24 lg:grid-cols-[55fr_45fr]"
     >
       <TestimonialPeopleContainer />
 
