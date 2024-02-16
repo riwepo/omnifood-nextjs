@@ -4,17 +4,9 @@ import StarIcon from "@/public/icons/meals/star-outline.svg";
 import RestaurantIcon from "@/public/icons/meals/restaurant-outline.svg";
 
 function Meal({ mealData }) {
-  const imgWidth = 700;
-  const imgHeight = 467;
-
   return (
     <div className="meal overflow-hidden rounded-xl bg-white shadow-xl shadow-black/10 transition-all duration-700 hover:-translate-y-3">
-      <Image
-        src={mealData.imgSrc}
-        alt={mealData.imgAlt}
-        width={imgWidth}
-        height={imgHeight}
-      />
+      <Image src={mealData.img} alt={mealData.imgAlt} />
 
       <div className="meal-content pb-12 pl-12 pr-12 pt-8">
         <div className="meal-tags mb-3 flex gap-3">

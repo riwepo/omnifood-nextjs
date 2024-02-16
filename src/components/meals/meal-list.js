@@ -1,10 +1,13 @@
+import mealImage1 from "@/public/img/meals/meal-1.jpg";
+import mealImage2 from "@/public/img/meals/meal-2.jpg";
+
 import Meal from "./meal";
 import Diets from "./diets";
 
 const mealData = [
   {
     key: 1,
-    imgSrc: "/img/meals/meal-1.jpg",
+    img: mealImage1,
     imgAlt: "Japanese Gyozas",
     tags: [
       { id: "vegetarian", heading: "Vegetarian", colour: "bg-tags-vegetarian" },
@@ -17,7 +20,7 @@ const mealData = [
   },
   {
     key: 2,
-    imgSrc: "/img/meals/meal-2.jpg",
+    img: mealImage2,
     imgAlt: "Avocado Salad",
     tags: [
       { id: "vegan", heading: "Vegan", colour: "bg-tags-vegan" },
