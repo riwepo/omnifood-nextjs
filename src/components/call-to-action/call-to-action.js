@@ -13,7 +13,10 @@ function CallToAction() {
           className="cta grid grid-cols-1 overflow-hidden rounded-xl
  bg-gradient-to-br from-burnt-orange-400 to-burnt-orange-100 shadow-xl shadow-black/25 md:grid-cols-[3fr_2fr] lg:grid-cols-[2fr_1fr]"
         >
-          <div className="cta-text-box pb-16 pl-16 pr-16 pt-12 text-burnt-orange-300">
+          <div
+            className="cta-text-box p-8 text-burnt-orange-300 md:pb-16 md:pl-16 md:pr-16
+ md:pt-12"
+          >
             <HeadingSecondary extraClasses="text-inherit mb-8">
               Get your first meal for free!
             </HeadingSecondary>
