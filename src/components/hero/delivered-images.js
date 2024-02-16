@@ -7,27 +7,27 @@ import customer4 from "@/public/img/customers/customer-4.jpg";
 import customer5 from "@/public/img/customers/customer-5.jpg";
 
 const imageData = [
-  { index: 1, src: customer1 },
-  { index: 2, src: customer2 },
-  { index: 3, src: customer3 },
-  { index: 4, src: customer4 },
-  { index: 5, src: customer5 },
+  { key: 1, src: customer1 },
+  { key: 2, src: customer2 },
+  { key: 3, src: customer3 },
+  { key: 4, src: customer4 },
+  { key: 5, src: customer5 },
 ];
-console.log(imageData);
 function DeliveredImages() {
   return (
-    <div className="flex">
+    <ul className="flex list-none">
       {imageData.map((img) => {
         return (
-          <Image
-            key={img.index}
-            src={img.src}
-            alt="customer"
-            className="-mr-4 h-12 w-12 rounded-full border-2 border-whites-100 last:mr-0"
-          ></Image>
+          <li key={img.key}>
+            <Image
+              src={img.src}
+              alt="customer"
+              className="-mr-4 h-12 w-12 rounded-full border-2 border-whites-100 last:mr-0"
+            ></Image>
+          </li>
         );
       })}
-    </div>
+    </ul>
   );
 }
 

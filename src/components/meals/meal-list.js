@@ -3,7 +3,7 @@ import Diets from "./diets";
 
 const mealData = [
   {
-    index: 1,
+    key: 1,
     imgSrc: "/img/meals/meal-1.jpg",
     imgAlt: "Japanese Gyozas",
     tags: [
@@ -16,7 +16,7 @@ const mealData = [
     reviews: 537,
   },
   {
-    index: 2,
+    key: 2,
     imgSrc: "/img/meals/meal-2.jpg",
     imgAlt: "Avocado Salad",
     tags: [
@@ -35,7 +35,7 @@ function MealList() {
   return (
     <div className="_grid m-auto mb-12 grid max-w-[75rem] grid-cols-3 items-center gap-x-12 gap-y-12 px-8 py-0 md:gap-y-16 xl:gap-x-24">
       {mealData.map((meal) => {
-        return <Meal key={meal.index} mealData={meal} />;
+        return <Meal key={meal.key} mealData={meal} />;
       })}
       <Diets />
     </div>

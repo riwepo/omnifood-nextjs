@@ -12,7 +12,7 @@ function FormSelect({ id, label, options }) {
       >
         {options.map((option) => {
           return (
-            <option key={option.index} value={option.value}>
+            <option key={option.key} value={option.value}>
               {option.text}
             </option>
           );

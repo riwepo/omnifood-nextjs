@@ -69,7 +69,7 @@ function Plan({ planData }) {
         {planData.items.map((itemData) => {
           return (
             <PlanItem
-              key={itemData.index}
+              key={itemData.key}
               isChecked={itemData.isChecked}
               markup={itemData.markup}
             />

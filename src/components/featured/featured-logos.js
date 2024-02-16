@@ -8,25 +8,25 @@ import usaTodayLogo from "@/public/img/logos/usa-today.png";
 
 function FeaturedLogos() {
   const logoData = [
-    { index: 1, logo: techCrunchLogo, name: "techcrunch" },
+    { key: 1, logo: techCrunchLogo, name: "techcrunch" },
     {
-      index: 2,
+      key: 2,
       logo: businessInsiderLogo,
       name: "business-insider",
     },
     {
-      index: 3,
+      key: 3,
       logo: theNewYorkTimesLogo,
       name: "the-new-york-times",
     },
-    { index: 4, logo: forbesLogo, name: "forbes" },
-    { index: 5, logo: usaTodayLogo, name: "usa-today" },
+    { key: 4, logo: forbesLogo, name: "forbes" },
+    { key: 5, logo: usaTodayLogo, name: "usa-today" },
   ];
   return (
     <ul className="flex justify-around">
       {logoData.map((img) => {
         return (
-          <li key={img.index}>
+          <li key={img.key}>
             <Image
               src={img.logo}
               alt={`${img.name} logo`}

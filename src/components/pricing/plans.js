@@ -6,14 +6,14 @@ function Plans() {
     price: "399",
     description: "per month. That's just $13 per meal!",
     items: [
-      { index: 0, isChecked: true, markup: <span>1 meal per day</span> },
+      { key: 1, isChecked: true, markup: <span>1 meal per day</span> },
       {
-        index: 1,
+        key: 2,
         isChecked: true,
         markup: <span>Order from 11am to 9pm</span>,
       },
-      { index: 2, isChecked: true, markup: <span>Delivery is free</span> },
-      { index: 3, isChecked: false, markup: "" },
+      { key: 3, isChecked: true, markup: <span>Delivery is free</span> },
+      { key: 4, isChecked: false, markup: "" },
     ],
   };
   const plan2Data = {
@@ -22,7 +22,7 @@ function Plans() {
     description: "per month. That's just $11 per meal!",
     items: [
       {
-        index: 0,
+        key: 1,
         isChecked: true,
         markup: (
           <span>
@@ -31,7 +31,7 @@ function Plans() {
         ),
       },
       {
-        index: 1,
+        key: 2,
         isChecked: true,
         markup: (
           <span>
@@ -39,9 +39,9 @@ function Plans() {
           </span>
         ),
       },
-      { index: 2, isChecked: true, markup: <span>Delivery is free</span> },
+      { key: 3, isChecked: true, markup: <span>Delivery is free</span> },
       {
-        index: 3,
+        key: 4,
         isChecked: true,
         markup: <span>Get access to latest recipes</span>,
       },

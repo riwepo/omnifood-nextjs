@@ -3,12 +3,12 @@ import FormInput from "./form-input";
 import FormSelect from "./form-select";
 
 const optionData = [
-  { index: 1, value: "", text: "Please choose one option:" },
-  { index: 2, value: "friends", text: "Friends and family" },
-  { index: 3, value: "youtube", text: "YouTube video" },
-  { index: 4, value: "podcast", text: "Podcast" },
-  { index: 5, value: "ad", text: "Facebook ad" },
-  { index: 6, value: "others", text: "Others" },
+  { key: 1, value: "", text: "Please choose one option:" },
+  { key: 2, value: "friends", text: "Friends and family" },
+  { key: 3, value: "youtube", text: "YouTube video" },
+  { key: 4, value: "podcast", text: "Podcast" },
+  { key: 5, value: "ad", text: "Facebook ad" },
+  { key: 6, value: "others", text: "Others" },
 ];
 
 function Form() {
