@@ -18,11 +18,11 @@ function DeliveredImages() {
     <ul className="flex list-none">
       {imageData.map((img) => {
         return (
-          <li key={img.key}>
+          <li key={img.key} className="-mr-4 last:mr-0">
             <Image
               src={img.src}
               alt="customer"
-              className="-mr-4 h-12 w-12 rounded-full border-2 border-whites-100 last:mr-0"
+              className="h-12 w-12 rounded-full border-2 border-whites-100"
             ></Image>
           </li>
         );
