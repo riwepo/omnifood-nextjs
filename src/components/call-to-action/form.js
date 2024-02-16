@@ -13,7 +13,10 @@ const optionData = [
 
 function Form() {
   return (
-    <form className="cta-form grid grid-cols-2 gap-x-8 gap-y-6" name="sign-up">
+    <form
+      className="cta-form grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-2"
+      name="sign-up"
+    >
       <FormInput
         id="full-name"
         type="text"
