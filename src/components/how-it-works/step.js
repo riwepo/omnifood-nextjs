@@ -25,6 +25,42 @@ function Step({ stepData }) {
   const textOrderStr = orders[textOrder];
   const picOrderStr = orders[picOrder];
 
+  const imgBoxClass = `
+  relative
+  ${picOrderStr}
+  flex
+  items-center
+  justify-center
+  `;
+
+  const imgBoxClassBefore = `
+  before:bg-whites-100
+  before:absolute
+  before:left-1/2
+  before:top-1/2
+  before:z-10
+  before:block
+  before:w-[60%]
+  before:-translate-x-1/2
+  before:-translate-y-1/2
+  before:rounded-full
+  before:pb-[60%]  
+  `;
+
+  const imgBoxClassAfter = `
+  after:bg-whites-200
+  after:absolute
+  after:left-1/2
+  after:top-1/2
+  after:z-20
+  after:block
+  after:w-[45%]
+  after:-translate-x-1/2
+  after:-translate-y-1/2
+  after:rounded-full
+  after:pb-[45%]   
+  `;
+
   return (
     <>
       <div className={textOrderStr}>
@@ -35,40 +71,14 @@ function Step({ stepData }) {
         <p className="text-lg leading-7">{stepData.description}</p>
       </div>
 
-      {/* TODO the bloody circles stopped working again */}
-
       <div
-        className={`
-        relative
-        before:bg-whites-100
-        after:bg-whites-200
-        ${picOrderStr}
-        flex
-        items-center
-        justify-center
-         before:absolute
-         before:left-1/2
-         before:top-1/2
-         before:-z-20
-         before:block
-         before:w-[60%]
-         before:-translate-x-1/2
-         before:-translate-y-1/2
-         before:rounded-full
-         before:pb-[60%]  
-         after:absolute
-         after:left-1/2
-         after:top-1/2
-         after:-z-10
-         after:block
-         after:w-[45%]
-         after:-translate-x-1/2
-         after:-translate-y-1/2
-         after:rounded-full
-         after:pb-[45%]       
-        `}
+        className={`${imgBoxClass} ${imgBoxClassBefore} ${imgBoxClassAfter}`}
       >
-        <Image src={stepData.img} className="w-[35%]" alt={stepData.imgAlt} />
+        <Image
+          src={stepData.img}
+          className="z-30 w-[35%]"
+          alt={stepData.imgAlt}
+        />
       </div>
     </>
   );
