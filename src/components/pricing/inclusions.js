@@ -36,7 +36,7 @@ function Inclusions() {
     },
   ];
   return (
-    <div className="_grid container mx-auto my-0 mb-12 grid max-w-[75rem] grid-cols-4 gap-x-12 gap-y-12 md:gap-y-16 xl:gap-x-24">
+    <div className="_grid container mx-auto my-0 mb-12 grid max-w-[75rem] grid-cols-1 gap-x-12 gap-y-12 px-6 md:grid-cols-2 md:gap-y-16 lg:grid-cols-4 xl:gap-x-24">
       {featureData.map((feature) => {
         return <Feature key={feature.key} featureData={feature} />;
       })}
@@ -45,13 +45,3 @@ function Inclusions() {
 }
 
 export default Inclusions;
-
-// .feature-icon {
-//     color: #e67e22;
-//     height: 3.2rem;
-//     width: 3.2rem;
-//     background-color: #fdf2e9;
-//     margin-bottom: 3.2rem;
-//     padding: 1.6rem;
-//     border-radius: 50%;
-//   }
