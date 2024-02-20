@@ -13,14 +13,20 @@ function Step({ stepData }) {
     picOrder = index * 2;
     textOrder = picOrder + 1;
   }
-  // note tailwind needs complete unbroken class names in the source file
+
+  // note1 tailwind needs complete unbroken class names in the source file
+  // that's why these strings are listed here and not contructed from a template
+
+  // note2 these grid orders only apply for screen sizes above small
+  // for the small size (phone) we use the natural order
+  // hence the md: breakpoint on each string
   const orders = [
-    "order-1",
-    "order-2",
-    "order-3",
-    "order-4",
-    "order-5",
-    "order-6",
+    "md:order-1",
+    "md:order-2",
+    "md:order-3",
+    "md:order-4",
+    "md:order-5",
+    "md:order-6",
   ];
   const textOrderStr = orders[textOrder];
   const picOrderStr = orders[picOrder];
