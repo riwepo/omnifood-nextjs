@@ -1,7 +1,7 @@
 import HeadingSecondary from "../ui/heading-secondary";
 import Subheading from "../ui/subheading";
 import AllRecipesLink from "./all-recipes-link";
-import MealList from "./meal-list";
+import MealsAndDiets from "./meals-and-diets";
 
 function Meals() {
   return (
@@ -13,7 +13,7 @@ function Meals() {
         </HeadingSecondary>
       </div>
 
-      <MealList />
+      <MealsAndDiets />
       <AllRecipesLink />
     </section>
   );
