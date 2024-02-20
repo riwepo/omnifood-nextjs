@@ -36,7 +36,7 @@ const mealData = [
 
 function MealsAndDiets() {
   return (
-    <div className="_grid m-auto mb-12 grid max-w-[75rem] grid-cols-3 items-center gap-x-12 gap-y-12 px-8 py-0 md:gap-y-16 xl:gap-x-24">
+    <div className="_grid m-auto mb-12 grid max-w-[75rem] grid-cols-1 items-center gap-x-12 gap-y-12 px-8 py-0 md:grid-cols-2 md:gap-y-16 lg:grid-cols-3 xl:gap-x-24">
       {mealData.map((meal) => {
         return <Meal key={meal.key} mealData={meal} />;
       })}
