@@ -31,7 +31,7 @@ const galleryData = [
 function Gallery() {
   const alt = "Photo of beautifully arranged food";
   return (
-    <div className="gallery grid grid-cols-4 gap-x-4 gap-y-4 p-4 md:grid-cols-6 xl:grid-cols-2 2xl:grid-cols-3">
+    <div className="gallery grid grid-cols-4 gap-x-4 gap-y-4 p-4 md:grid-cols-6 lg:grid-cols-2 2xl:grid-cols-3">
       {galleryData.map((item) => {
         return (
           <figure
