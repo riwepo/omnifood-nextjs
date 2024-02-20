@@ -7,11 +7,11 @@ import customer4 from "@/public/img/customers/customer-4.jpg";
 import customer5 from "@/public/img/customers/customer-5.jpg";
 
 const imageData = [
-  { key: 1, src: customer1 },
-  { key: 2, src: customer2 },
-  { key: 3, src: customer3 },
-  { key: 4, src: customer4 },
-  { key: 5, src: customer5 },
+  { key: 1, img: customer1 },
+  { key: 2, img: customer2 },
+  { key: 3, img: customer3 },
+  { key: 4, img: customer4 },
+  { key: 5, img: customer5 },
 ];
 function DeliveredImages() {
   return (
@@ -20,7 +20,7 @@ function DeliveredImages() {
         return (
           <li key={img.key} className="-mr-4 last:mr-0">
             <Image
-              src={img.src}
+              src={img.img}
               alt="customer"
               className="h-12 w-12 rounded-full border-2 border-whites-100"
             ></Image>
