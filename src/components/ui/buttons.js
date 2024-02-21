@@ -31,15 +31,15 @@ export function Button2({ href, children, extraClasses }) {
   );
 }
 
-export function Button3({ href, children, extraClasses }) {
+export function Button3({ children, extraClasses }) {
   const classes = cn(
     commonClasses,
     "self-end p-3 bg-burnt-orange-300 text-whites-100 hover:bg-white hover:text-greys-200  ",
     extraClasses,
   );
   return (
-    <Link href={href} className={classes}>
+    <button action="submit" className={classes}>
       {children}
-    </Link>
+    </button>
   );
 }
