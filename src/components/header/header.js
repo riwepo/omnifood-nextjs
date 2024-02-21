@@ -8,6 +8,7 @@ import Nav from "./nav";
 import { cn } from "@/lib/utils";
 import { useScrollListener } from "@/lib/events";
 import omnifoodLogo from "@/public/img/omnifood-logo.png";
+import MobileMenuButton from "./mobile-menu-button";
 
 function Header() {
   // the hero class is at the top of the page
@@ -49,6 +50,7 @@ function Header() {
       {/* this is just for debugging */}
       <p className="before:content-['phone'] md:before:content-['tablet'] lg:before:content-['landscape_tablet'] xl:before:content-['desktop'] 2xl:before:content-['big_desktop']"></p>
       <Nav />
+      <MobileMenuButton />
     </header>
   );
 }
