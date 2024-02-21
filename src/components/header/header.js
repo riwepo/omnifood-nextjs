@@ -34,7 +34,7 @@ function Header() {
   }, [heroInView]);
 
   const headerClass = cn(
-    "z-10 flex h-24 items-center justify-between px-8 xl:px-12 py-0",
+    "z-40 flex h-24 items-center justify-between px-8 xl:px-12 py-0",
     stickyClass,
   );
   return (
