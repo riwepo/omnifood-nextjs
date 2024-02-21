@@ -30,7 +30,7 @@ function FeaturedLogos() {
             <Image
               src={img.logo}
               alt={`${img.name} logo`}
-              className="h-[0.75rem] w-full opacity-50 brightness-0 md:h-[1.5rem] lg:h-[2rem]"
+              className="h-[0.75rem] w-auto opacity-50 brightness-0 md:h-[1.5rem] lg:h-[2rem]"
             />
           </li>
         );
