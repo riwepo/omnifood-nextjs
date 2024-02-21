@@ -1,3 +1,5 @@
+"use client";
+
 import { Button3 } from "../ui/buttons";
 import FormInput from "./form-input";
 import FormSelect from "./form-select";
@@ -16,6 +18,9 @@ function Form() {
     <form
       className="cta-form grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-2"
       name="sign-up"
+      action="https://api.web3forms.com/submit"
+      method="POST"
+      id="form"
     >
       <FormInput
         id="full-name"
@@ -34,10 +39,20 @@ function Form() {
         label="Where did you hear from us?"
         options={optionData}
       />
+      <input
+        type="hidden"
+        name="subject"
+        value="This will be the subject line in the email received."
+      />
+      <input
+        type="hidden"
+        name="access_key"
+        value="cba6f135-bb8a-4cbb-8c5b-5a64b378a716"
+      />
+      {/* here will will redirect to a thankyou page that I havent built yet */}
+      <input type="hidden" name="redirect" value="http://localhost:3000" />
 
-      <Button3 extraClasses="" href="#">
-        Sign up now
-      </Button3>
+      <Button3 extraClasses="">Sign up now</Button3>
     </form>
   );
 }
