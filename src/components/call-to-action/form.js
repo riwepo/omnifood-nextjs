@@ -50,7 +50,11 @@ function Form() {
         value="cba6f135-bb8a-4cbb-8c5b-5a64b378a716"
       />
       {/* here will will redirect to a thankyou page that I havent built yet */}
-      <input type="hidden" name="redirect" value="http://localhost:3000" />
+      <input
+        type="hidden"
+        name="redirect"
+        value="https://omnifood-nextjs-bc1sn2dlq-riwepo.vercel.app/"
+      />
 
       <Button3 extraClasses="">Sign up now</Button3>
     </form>
