@@ -6,41 +6,12 @@ function TestimonialPeopleContainer() {
   return (
     <div className="testimonials-container px-8 py-24 xl:px-24 xl:py-24">
       <Subheading>Testimonials</Subheading>
-      <HeadingSecondary>Once you try it, you can't go back</HeadingSecondary>
+      <HeadingSecondary>
+        Once you try it, you can&apos;t go back
+      </HeadingSecondary>
       <TestimonialPeople />
     </div>
   );
 }
 
 export default TestimonialPeopleContainer;
-
-// .section-testimonials {
-//   background-color: #fdf2e9;
-//   display: grid;
-//   grid-template-columns: 55fr 45fr;
-//   align-items: center;
-// }
-
-// .testimonials-container {
-//   padding: 9.6rem;
-// }
-
-// .subheading {
-//   display: block;
-//   font-size: 1.6rem;
-//   font-weight: 500;
-//   color: #cf711f;
-//   text-transform: uppercase;
-//   margin-bottom: 1.6rem;
-//   letter-spacing: 0.75px;
-// }
-
-// .heading-primary,
-// .heading-secondary,
-// .heading-tertiary {
-//   font-weight: 700;
-//   color: #333;
-//   /* color: #45260a; */
-//   /* color: #343a40; */
-//   letter-spacing: -0.5px;
-// }
