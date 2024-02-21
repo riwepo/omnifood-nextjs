@@ -3,7 +3,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const commonClasses =
-  "inline-block rounded-lg px-8 py-4 text-xl font-semibold transition-all duration-300";
+  "inline-block rounded-lg px-4 py-6 md:px-8 md:py-4 text-xl font-semibold transition-all duration-300";
 
 export function Button1({ href, onClick, children, extraClasses }) {
   const classes = cn(
