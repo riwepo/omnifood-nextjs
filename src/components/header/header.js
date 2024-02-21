@@ -54,7 +54,7 @@ function Header() {
         <Image
           alt="Omnifood logo"
           src={omnifoodLogo}
-          className="h-[1.375rem] w-full"
+          className="h-[1.375rem] w-auto"
         />
       </Link>
       {/* this is just for debugging */}

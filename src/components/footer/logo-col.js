@@ -11,7 +11,7 @@ function LogoCol() {
         <Image
           alt="Omnifood logo"
           src={omnifoodLogo}
-          className="logo h-[1.375rem] w-full"
+          className="logo h-[1.375rem] w-auto"
         />
       </a>
       <SocialLinks />
