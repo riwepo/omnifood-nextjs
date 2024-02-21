@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 import Nav from "./nav";
 import { cn } from "@/lib/utils";
@@ -22,6 +22,7 @@ function Header() {
   const [isNavOpen, SetIsNavOpen] = useState(false);
   const [stickyClass, setStickyClass] = useState("relative bg-whites-100");
   const [heroInView, setHeroInView] = useState(true);
+
   useScrollListener((inView) => {
     setHeroInView(inView);
   });
@@ -39,6 +40,10 @@ function Header() {
     SetIsNavOpen((prev) => !prev);
   };
 
+  const handleNavClick = function (e) {
+    SetIsNavOpen(false);
+  };
+
   const headerClass = cn(
     "z-40 flex h-24 items-center justify-between px-8 xl:px-12 py-0",
     stickyClass,
@@ -54,7 +59,7 @@ function Header() {
       </Link>
       {/* this is just for debugging */}
       <p className="before:content-['phone'] md:before:content-['tablet'] lg:before:content-['landscape_tablet'] xl:before:content-['desktop'] 2xl:before:content-['big_desktop']"></p>
-      <Nav isNavOpen={isNavOpen} />
+      <Nav isNavOpen={isNavOpen} onClick={handleNavClick} />
       <MobileMenuButton isNavOpen={isNavOpen} onClick={handleMobileMenuClick} />
     </header>
   );

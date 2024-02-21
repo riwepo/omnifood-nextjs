@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 import { Button1 } from "../ui/buttons";
 
-function Nav({ isNavOpen }) {
+function Nav({ isNavOpen, onClick }) {
+  const router = useRouter();
   const navLinkData = [
     { id: 1, href: "#how", name: "How it works" },
     { id: 2, href: "#meals", name: "Meals" },
@@ -10,6 +12,13 @@ function Nav({ isNavOpen }) {
     { id: 4, href: "#pricing", name: "Pricing" },
   ];
   const translate = isNavOpen ? "translate-x-0" : "translate-x-full";
+
+  // this is used as a signal to close the mobile navigation
+  const handleClick = async function (e) {
+    onClick();
+    await router.push(e.target.href);
+  };
+
   return (
     <nav
       className={`${translate} absolute left-0 top-0 flex h-[100vh] w-full items-center justify-center bg-[rgba(255,255,255,0.5)] backdrop-blur transition-all duration-500 md:relative md:h-auto md:w-auto md:translate-x-0 md:bg-transparent md:backdrop-blur-none`}
@@ -21,6 +30,7 @@ function Nav({ isNavOpen }) {
               <Link
                 className="text-3xl font-medium hover:text-burnt-orange-200 focus:shadow-[0_0_0_0.5rem_rgba(230,125,34,0.5)] focus:outline-none active:text-burnt-orange-200 md:text-lg"
                 href={link.href}
+                onClick={handleClick}
               >
                 {link.name}
               </Link>
@@ -31,6 +41,7 @@ function Nav({ isNavOpen }) {
           <Button1
             href="#call-to-action"
             extraClasses="px-4 py-2 focus:shadow-[0_0_0_0.5rem_rgba(230,125,34,0.5)] focus:outline-none text-3xl md:text-lg"
+            onClick={handleClick}
           >
             Try for free
           </Button1>
