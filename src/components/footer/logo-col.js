@@ -6,7 +6,7 @@ import SocialLinks from "./social-links";
 
 function LogoCol() {
   return (
-    <div className="logo-col flex flex-col">
+    <div className="logo-col row-start-2 flex flex-col lg:row-start-1">
       <a href="#" className="footer-logo mb-8 block">
         <Image
           alt="Omnifood logo"
