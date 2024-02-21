@@ -2,7 +2,7 @@ import FooterLink from "./footer-link";
 
 function ContactUsCol() {
   return (
-    <div className="address-col row-start-2 lg:row-start-1">
+    <div className="address-col col-span-3 row-start-2 lg:col-span-1 lg:row-start-1">
       <p className="footer-heading mb-10 text-lg font-medium">Contact us</p>
       <address className="contacts text-base leading-relaxed">
         <p className="address mb-6  text-greys-200">

@@ -2,7 +2,7 @@ import FooterLink from "./footer-link";
 
 function MiscCol({ colData }) {
   return (
-    <nav className="nav-col">
+    <nav className="nav-col col-span-2 lg:col-span-1">
       <p className="footer-heading mb-10 text-lg font-medium">
         {colData.heading}
       </p>
