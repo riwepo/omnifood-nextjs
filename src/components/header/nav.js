@@ -2,15 +2,18 @@ import Link from "next/link";
 
 import { Button1 } from "../ui/buttons";
 
-function Nav() {
+function Nav({ isNavOpen }) {
   const navLinkData = [
     { id: 1, href: "#how", name: "How it works" },
     { id: 2, href: "#meals", name: "Meals" },
     { id: 3, href: "#testimonials", name: "Testimonials" },
     { id: 4, href: "#pricing", name: "Pricing" },
   ];
+  const translate = isNavOpen ? "translate-x-0" : "translate-x-full";
   return (
-    <nav className="translate-x-fullxxx absolute left-0 top-0 flex h-[100vh] w-full items-center justify-center bg-[rgba(255,255,255,0.5)] backdrop-blur transition-all duration-500 md:relative md:h-auto md:w-auto md:translate-x-0 md:bg-transparent md:backdrop-blur-none">
+    <nav
+      className={`${translate} absolute left-0 top-0 flex h-[100vh] w-full items-center justify-center bg-[rgba(255,255,255,0.5)] backdrop-blur transition-all duration-500 md:relative md:h-auto md:w-auto md:translate-x-0 md:bg-transparent md:backdrop-blur-none`}
+    >
       <ul className="flex list-none flex-col items-center gap-8 md:flex-row xl:gap-12">
         {navLinkData.map((link) => {
           return (

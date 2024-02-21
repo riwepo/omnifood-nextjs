@@ -19,6 +19,7 @@ function Header() {
   // if the hero class is not in view, the header is stuck to the top of the page
   // with a transparent background
   //
+  const [isNavOpen, SetIsNavOpen] = useState(false);
   const [stickyClass, setStickyClass] = useState("relative bg-whites-100");
   const [heroInView, setHeroInView] = useState(true);
   useScrollListener((inView) => {
@@ -33,6 +34,10 @@ function Header() {
       setStickyClass("sticky top-0 bg-[rgba(255,255,255,0.97)]");
     }
   }, [heroInView]);
+
+  const handleMobileMenuClick = function (e) {
+    SetIsNavOpen((prev) => !prev);
+  };
 
   const headerClass = cn(
     "z-40 flex h-24 items-center justify-between px-8 xl:px-12 py-0",
@@ -49,8 +54,8 @@ function Header() {
       </Link>
       {/* this is just for debugging */}
       <p className="before:content-['phone'] md:before:content-['tablet'] lg:before:content-['landscape_tablet'] xl:before:content-['desktop'] 2xl:before:content-['big_desktop']"></p>
-      <Nav />
-      <MobileMenuButton />
+      <Nav isNavOpen={isNavOpen} />
+      <MobileMenuButton isNavOpen={isNavOpen} onClick={handleMobileMenuClick} />
     </header>
   );
 }
